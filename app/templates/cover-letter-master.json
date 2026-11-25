@@ -1,0 +1,27 @@
+{
+  "documentTitle": "Cover letter master",
+  "name": "{{YOUR NAME}}",
+  "heading": "Application for {{ROLE TITLE}}",
+  "contact": [
+    "{{YOUR NAME}}",
+    "{{CITY, REGION}}",
+    "{{PHONE}}",
+    "{{EMAIL}}"
+  ],
+  "date": "{{Month Day, Year}}",
+  "recipient": [
+    "{{Hiring team or person's name}}",
+    "{{Organization}}",
+    "{{City, Region}}"
+  ],
+  "salutation": "Dear {{Hiring Manager or name}},",
+  "paragraphs": [
+    "{{Opening: the role you are applying for and, in one or two sentences, why this role and this organization.}}",
+    "{{Evidence paragraph 1: the posting's most important qualification, and a specific action you took and its result.}}",
+    "{{Evidence paragraph 2: a second qualification, such as coordination, partnerships or technical depth, with one concrete example.}}",
+    "{{Fit paragraph: how your experience connects to the team's current work or program, without claiming an affiliation you do not have.}}",
+    "{{Close: what you would like to discuss next, and thanks. Keep the letter to one page (about 280–380 words).}}"
+  ],
+  "closing": "Sincerely,",
+  "signature": "{{YOUR NAME}}"
+}

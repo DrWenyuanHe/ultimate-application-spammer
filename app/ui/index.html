@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <title>Ultimate Application Spammer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="favicon.svg" alt="" width="28" height="28">
+      <span class="brand-name">Ultimate Application Spammer</span>
+      <span class="version" id="app-version" hidden></span>
+    </div>
+    <p class="sync-status" id="sync-status">Loading…</p>
+    <p class="sr-only" id="announcer" role="status" aria-live="polite"></p>
+  </header>
+
+  <div class="banners">
+    <div class="banner banner-demo" id="demo-banner" hidden>
+      <strong>Demo data — not your real workspace.</strong>
+      <span>Everything here is invented.</span>
+    </div>
+    <div class="banner banner-update" id="update-banner" hidden></div>
+    <div class="banner banner-error" id="offline-banner" role="alert" hidden>
+      Can't reach the dashboard right now. If you closed the window that runs it, ask your assistant to start the dashboard again.
+    </div>
+  </div>
+
+  <div class="layout">
+    <nav class="sidenav" aria-label="Sections">
+      <ul>
+        <li><a href="#overview" data-view="overview">Overview</a></li>
+        <li><a href="#jobs" data-view="jobs">Opportunities</a></li>
+        <li><a href="#experience" data-view="experience">Experience strength</a></li>
+        <li><a href="#employers" data-view="employers">Employers</a></li>
+        <li><a href="#rules" data-view="rules">Writing rules</a></li>
+        <li><a href="#profile" data-view="profile">Profile and settings</a></li>
+      </ul>
+      <p class="nav-note">This page only shows information. Your assistant makes every change.</p>
+    </nav>
+    <main id="main" tabindex="-1">
+      <noscript><p class="empty">This dashboard needs JavaScript turned on in your browser.</p></noscript>
+    </main>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

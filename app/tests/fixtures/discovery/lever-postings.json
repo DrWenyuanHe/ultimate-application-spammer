@@ -1,0 +1,25 @@
+[
+  {
+    "additional": "<div>Benefits</div>",
+    "categories": { "commitment": "Full-time", "location": "Vancouver, BC", "team": "Applied Research", "department": "R&D", "allLocations": ["Vancouver, BC", "Montreal, QC"] },
+    "createdAt": 1795000000000,
+    "descriptionPlain": "Contoso Robotics builds friendly warehouse robots. You will design experiments and analyse results with the research team.",
+    "id": "11111111-2222-3333-4444-555555555555",
+    "lists": [],
+    "text": "Machine Learning Scientist",
+    "country": "CA",
+    "workplaceType": "hybrid",
+    "hostedUrl": "https://jobs.lever.co/contosorobotics/11111111-2222-3333-4444-555555555555",
+    "applyUrl": "https://jobs.lever.co/contosorobotics/11111111-2222-3333-4444-555555555555/apply"
+  },
+  {
+    "categories": { "commitment": "Contract", "location": "Anywhere", "team": "Finance", "allLocations": ["Anywhere"] },
+    "createdAt": 1795100000000,
+    "descriptionPlain": "Short contract.",
+    "id": "66666666-7777-8888-9999-000000000000",
+    "text": "Accounts Payable Specialist",
+    "workplaceType": "remote",
+    "hostedUrl": "https://jobs.lever.co/contosorobotics/66666666-7777-8888-9999-000000000000",
+    "applyUrl": "https://jobs.lever.co/contosorobotics/66666666-7777-8888-9999-000000000000/apply"
+  }
+]

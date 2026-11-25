@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "about": "Starter writing rules for resumes, CVs and cover letters. 'starter' rules are on by default; 'proposed' rules are suggestions the person can approve. Examples are invented; replace them with your own confirmed evidence. To change or retire a rule, ask your assistant (operations rules.revise / rules.retire).",
+  "rules": [
+    {
+      "id": "qualifications-to-evidence",
+      "status": "starter",
+      "title": "Match qualifications with supported examples",
+      "rule": "Connect the role's important qualifications to specific candidate actions and outcomes supported by the career library. Distinguish demonstrated experience from transferable skills and unverified requirements.",
+      "whenRelevant": "When tailoring a resume, CV or cover letter to a posting.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "Posting asks for 'experience coordinating multi-site studies'. Map it to the confirmed achievement 'coordinated data collection across three partner clinics', and list 'budget management' as a gap instead of implying it."
+    },
+    {
+      "id": "no-unmet-requirements",
+      "status": "starter",
+      "title": "Never claim a requirement that the record does not support",
+      "rule": "If the posting asks for specialist tenure or a qualification the record does not establish, do not imply it. Describe the experience by its accurate field and length, and note the gap in the review notes so the candidate can decide how to address it.",
+      "whenRelevant": "Whenever a posting lists required years, credentials or specialist experience.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "The posting asks for five years in policy research; the candidate has six years of laboratory research. Keep 'six years of laboratory research' and use supported communication and coordination examples, without calling it policy research."
+    },
+    {
+      "id": "original-initiative",
+      "status": "starter",
+      "title": "Show initiative through original work",
+      "rule": "Use a concrete example of originating a direction, adapting the approach and carrying it to an outcome. Preserve collaborators' and the supervisor's or PI's contributions.",
+      "whenRelevant": "When a role asks for initiative, adaptability, resourcefulness or research development.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "A largely self-directed thesis direction that led to a first-author paper, or redesigning a previously rejected grant proposal that was then funded, with the PI named as the formal applicant."
+    },
+    {
+      "id": "concrete-collaboration",
+      "status": "starter",
+      "title": "Describe concrete collaboration and coordination",
+      "rule": "Describe the partner context and the candidate's actual coordination actions. Verify counts such as study denominators and the number of institutions before using them.",
+      "whenRelevant": "When the role calls for international or multidisciplinary collaboration, partnerships or coordination.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "'Worked with clinical collaborators abroad to align study definitions and methods, interpret analyses and revise the manuscript through successive rounds' instead of 'led an international collaboration across four institutions' when the count is unconfirmed."
+    },
+    {
+      "id": "grant-contribution-and-outcome",
+      "status": "starter",
+      "title": "Explain grant contributions and funding outcomes",
+      "rule": "Describe the candidate's supported contributions to research conception, proposal redesign, supporting data and writing, and connect them to the funding outcome. Attribute the formal applicant or PI correctly and keep laboratory grants separate from personal scholarships.",
+      "whenRelevant": "When grant development, obtaining funding, scientific strategy or proposal writing are relevant.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "'Rewrote the aims and generated preliminary data for a lab grant (PI: supervisor) that was funded for five years' — not 'awarded a five-year grant'."
+    },
+    {
+      "id": "practical-coordination-evidence",
+      "status": "starter",
+      "title": "Show practical coordination with relevant examples",
+      "rule": "For roles involving programs, events, partnerships or research coordination, include a concise, supported example of organizing activities or coordinating people and stakeholders, alongside relevant subject-matter achievements. Do not infer grant administration, budget ownership or milestone responsibilities from unrelated operations experience.",
+      "whenRelevant": "When a cover letter must demonstrate program coordination, meetings, workshops, outreach, partnerships or comparable organizational duties.",
+      "materialKinds": ["cover-letter", "resume"],
+      "example": "Organizing a series of academic sessions for a society meeting, or managing outreach and agreements with partner schools."
+    },
+    {
+      "id": "concise-evidence-led-cover-letter",
+      "status": "starter",
+      "title": "Use letter space for evidence rather than generic assertions",
+      "rule": "Keep cover-letter paragraphs focused and concise. Replace generic claims about communication or suitability with supported actions and outcomes where space is needed. Preserve the candidate's contribution, collaborators' roles and funding attribution when tightening.",
+      "whenRelevant": "When revising a cover letter whose dense paragraphs or generic assertions crowd out relevant evidence.",
+      "materialKinds": ["cover-letter"],
+      "example": "Replace 'I am a strong communicator' with 'I presented quarterly results to a 40-person steering group and turned their feedback into the next study protocol.'"
+    },
+    {
+      "id": "publications-in-research-experience",
+      "status": "starter",
+      "title": "Show publication numbers and journals within research experience",
+      "rule": "In research-focused resumes, include the publication count and representative journal names directly in the research experience section. Use the current supported total and first/shared-first authorship count. Place career-wide totals at section level unless the evidence supports a role-specific count; keep manuscripts in progress and peer-review service distinct from published articles.",
+      "whenRelevant": "Research, research-development or scientific-program roles where publications help demonstrate qualification.",
+      "materialKinds": ["resume"],
+      "example": "'12 peer-reviewed publications (5 first or shared-first author) in journals including Journal A and Journal B; 2 manuscripts in preparation.'"
+    },
+    {
+      "id": "no-separate-bibliography-for-program-roles",
+      "status": "starter",
+      "title": "Omit a separate bibliography from program-development resumes",
+      "rule": "For scientific program-development resumes, omit a standalone selected-publications list when publication counts and representative journals already appear in research experience. This does not apply to academic CVs or when a posting asks for citations or writing samples.",
+      "whenRelevant": "Program-development or research-management resumes with a publication summary already in place.",
+      "materialKinds": ["resume"],
+      "example": "Drop the 'Selected Scientific Writing' section and keep the one-line publication summary under research experience."
+    },
+    {
+      "id": "reuse-format-master",
+      "status": "starter",
+      "title": "Reuse the shared format for every resume",
+      "rule": "Generate every resume from the format file and Word master in '3 Templates' instead of designing from scratch: centered uppercase name and contact block, full-width dark rule, light section rules, bold role titles, italic organizations, right-aligned dates and consistent native bullets. Let sections and page count follow relevant content. Replace every placeholder with confirmed facts and never reuse claims that happen to appear in a design reference. Render and inspect every page. Apply unless the person asks for a different format.",
+      "whenRelevant": "Whenever creating or revising a resume. Cover letters use their own format file; academic CVs may use a different layout.",
+      "materialKinds": ["resume"],
+      "example": "Render with the docs.resume operation, export the PDF, and check both pages for orphaned headings and date collisions."
+    },
+    {
+      "id": "explain-role-fit-and-motivation",
+      "status": "proposed",
+      "title": "Explain why this role and this program",
+      "rule": "Explain fit for the specific program and the candidate's genuine, stated motivation, substantiate it with supported examples, and connect those examples to the program's needs. Complement the resume rather than repeat it, keep funding attribution, and distinguish transferable experience from unconfirmed requirements. Do not claim affiliation with, or expertise in, the target program.",
+      "whenRelevant": "When writing a cover letter or 'why this role' answer for a program, institute or mission-driven team.",
+      "materialKinds": ["cover-letter", "answer"],
+      "example": "'I enjoy grant writing and am currently drafting a renewal; the program's need for proposal development is where I can contribute' — not 'as a member of your consortium'."
+    },
+    {
+      "id": "date-and-define-metrics",
+      "status": "proposed",
+      "title": "Date every metric and define its unit",
+      "rule": "Give each metric a date or period and an exact unit: weekly versus daily users, current versus cumulative, organization-level versus personal. Do not label sessions or summed daily users as unique weekly users, or private code as public open source.",
+      "whenRelevant": "Whenever a resume, letter or answer cites usage, revenue, growth or audience numbers.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'About 300 weekly active users (October 2026)' instead of 'thousands of users'."
+    },
+    {
+      "id": "confirmed-date-precision",
+      "status": "proposed",
+      "title": "Use only confirmed date precision",
+      "rule": "Show dates only to the precision the candidate has confirmed (usually month and year). Derive dates from confirmed facts and never invent days or months.",
+      "whenRelevant": "Role dates, award dates, publication dates and submission records.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "'2021 – 2024' when only years are confirmed, not 'Sep 2021 – Apr 2024'."
+    },
+    {
+      "id": "omit-unreconciled-numbers",
+      "status": "proposed",
+      "title": "Leave out numbers that conflict or lack a baseline",
+      "rule": "If sources disagree on a number, or a figure has no baseline or period, leave it out until it is reconciled instead of choosing one.",
+      "whenRelevant": "Any quantified claim.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "Two documents give partner revenue as 40k and 65k for the same year: write 'grew partner revenue' and ask the candidate which figure is correct."
+    },
+    {
+      "id": "show-digital-skill-through-built-tools",
+      "status": "proposed",
+      "title": "Demonstrate digital skills through working tools",
+      "rule": "Show digital and AI capability through tools the candidate actually built, their relevant features and the work they support. Name platforms only where experience is supported.",
+      "whenRelevant": "When digital tools, AI, analytics, coordination systems or research software are relevant qualifications.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "'Built an internal CRM with pipeline dashboards used by a five-person team' or 'built a web interface for exploring gene-expression data' instead of a list of tool names."
+    },
+    {
+      "id": "weight-professional-peer-review",
+      "status": "proposed",
+      "title": "Give professional peer review appropriate weight",
+      "rule": "Prioritize relevant professional journal peer reviewing when demonstrating scientific judgment and communication. Name suitable journals and describe the review work. Student editorial service can remain a secondary example.",
+      "whenRelevant": "When demonstrating evaluation, writing, critical appraisal or research communication.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "'Peer reviewer for Journal A and Journal B (6 manuscripts)' ahead of 'editor, undergraduate science journal'."
+    },
+    {
+      "id": "preserve-scope-when-editing",
+      "status": "proposed",
+      "title": "Keep concrete scope when shortening or humanizing",
+      "rule": "When editing for style, clarity or length, keep the scope and concrete responsibilities of each role. Improve wording without collapsing specific ownership into generic claims, and add no new claims.",
+      "whenRelevant": "Editing, condensing or humanizing any material.",
+      "materialKinds": ["resume", "cv", "cover-letter", "essay", "answer"],
+      "example": "Keep 'set up and ran all advertising accounts and personally negotiated agreements with partner institutions' rather than shortening it to 'supported marketing and partnerships'."
+    },
+    {
+      "id": "avoid-formulaic-phrasing",
+      "status": "proposed",
+      "title": "Avoid repeated formulaic phrasing",
+      "rule": "Vary sentence openings and length; avoid stock phrases, chains of participial clauses, semicolon-linked bullets and rhetorical dashes. Do not repeat the same construction (for example 'I would bring...') across paragraphs.",
+      "whenRelevant": "Final pass on any prose.",
+      "materialKinds": ["cover-letter", "essay", "answer"],
+      "example": "Three paragraphs starting 'I would bring...' become one direct claim, one example and one question about the team's priorities."
+    },
+    {
+      "id": "frame-plans-as-proposals",
+      "status": "proposed",
+      "title": "Frame forward-looking answers as proposals",
+      "rule": "Present plans for the new role ('In my first month I would...') as proposals, not as past work. Ask the candidate to read motivation statements aloud and change anything that does not sound like them.",
+      "whenRelevant": "Application questions about plans, first weeks or motivation.",
+      "materialKinds": ["answer", "essay", "cover-letter"],
+      "example": "'I would start by mapping the current intake process' rather than 'I streamlined the intake process'."
+    }
+  ]
+}

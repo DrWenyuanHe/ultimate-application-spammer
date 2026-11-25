@@ -1,0 +1,20 @@
+# Your private workspace. None of this is ever committed or uploaded.
+app/data/
+1 Applications/*
+2 Career Library/*
+3 Templates/*
+Archive/*
+!1 Applications/README.md
+!2 Career Library/README.md
+!3 Templates/README.md
+!Archive/README.md
+
+# Tooling
+node_modules/
+.DS_Store
+Thumbs.db
+~$*
+*.log
+.env
+.env.*
+.claude/settings.local.json

@@ -1,0 +1,72 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node app/cli.mjs doctor --brief",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(node app/cli.mjs doctor *)",
+      "Bash(node app/cli.mjs help)",
+      "Bash(node app/cli.mjs version)",
+      "Bash(node app/cli.mjs op list)",
+      "Bash(node app/cli.mjs op describe *)",
+      "Bash(node app/cli.mjs op run profile.get *)",
+      "Bash(node app/cli.mjs op run answers.get *)",
+      "Bash(node app/cli.mjs op run jobs.list *)",
+      "Bash(node app/cli.mjs op run jobs.get *)",
+      "Bash(node app/cli.mjs op run jobs.history *)",
+      "Bash(node app/cli.mjs op run search.list *)",
+      "Bash(node app/cli.mjs op run screen.list *)",
+      "Bash(node app/cli.mjs op run employers.list *)",
+      "Bash(node app/cli.mjs op run employers.sectors *)",
+      "Bash(node app/cli.mjs op run evidence.list *)",
+      "Bash(node app/cli.mjs op run evidence.strength *)",
+      "Bash(node app/cli.mjs op run materials.list *)",
+      "Bash(node app/cli.mjs op run materials.get *)",
+      "Bash(node app/cli.mjs op run brief.get *)",
+      "Bash(node app/cli.mjs op run rules.list *)",
+      "Bash(node app/cli.mjs op run submissions.list *)",
+      "Bash(node app/cli.mjs op run storage.report *)",
+      "Bash(node app/cli.mjs op run backup.list *)",
+      "Bash(node app/cli.mjs op run docs.check *)",
+      "Bash(node app/cli.mjs update check *)",
+      "Bash(node app/cli.mjs update status)",
+      "PowerShell(node app/cli.mjs doctor *)",
+      "PowerShell(node app/cli.mjs help)",
+      "PowerShell(node app/cli.mjs version)",
+      "PowerShell(node app/cli.mjs op list)",
+      "PowerShell(node app/cli.mjs op describe *)",
+      "PowerShell(node app/cli.mjs op run profile.get *)",
+      "PowerShell(node app/cli.mjs op run answers.get *)",
+      "PowerShell(node app/cli.mjs op run jobs.list *)",
+      "PowerShell(node app/cli.mjs op run jobs.get *)",
+      "PowerShell(node app/cli.mjs op run jobs.history *)",
+      "PowerShell(node app/cli.mjs op run search.list *)",
+      "PowerShell(node app/cli.mjs op run screen.list *)",
+      "PowerShell(node app/cli.mjs op run employers.list *)",
+      "PowerShell(node app/cli.mjs op run employers.sectors *)",
+      "PowerShell(node app/cli.mjs op run evidence.list *)",
+      "PowerShell(node app/cli.mjs op run evidence.strength *)",
+      "PowerShell(node app/cli.mjs op run materials.list *)",
+      "PowerShell(node app/cli.mjs op run materials.get *)",
+      "PowerShell(node app/cli.mjs op run brief.get *)",
+      "PowerShell(node app/cli.mjs op run rules.list *)",
+      "PowerShell(node app/cli.mjs op run submissions.list *)",
+      "PowerShell(node app/cli.mjs op run storage.report *)",
+      "PowerShell(node app/cli.mjs op run backup.list *)",
+      "PowerShell(node app/cli.mjs op run docs.check *)",
+      "PowerShell(node app/cli.mjs update check *)",
+      "PowerShell(node app/cli.mjs update status)"
+    ]
+  }
+}

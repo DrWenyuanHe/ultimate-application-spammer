@@ -1,0 +1,353 @@
+{
+  "about": "Fictional demo data. Every person, organization, posting and link here is invented; example.com addresses do not lead anywhere.",
+  "profile": {
+    "name": "Alex Rivera",
+    "preferredName": "Alex",
+    "email": "alex.rivera@example.com",
+    "phone": "(555) 010-0199",
+    "city": "Springfield",
+    "headline": "Environmental scientist moving into research program and operations roles",
+    "disciplines": [
+      "Research programs and grants",
+      "Research science",
+      "Scientific operations"
+    ],
+    "locations": [
+      "Springfield metro",
+      "Remote within the country"
+    ],
+    "workModels": [
+      "Hybrid",
+      "Remote"
+    ],
+    "employmentPreferences": "Prefers ongoing roles; would consider a fixed-term contract only for a clear step up in scope."
+  },
+  "employers": [
+    {
+      "name": "Northwind Biosciences",
+      "sector": "Biotech and pharma",
+      "website": "https://northwind.example.com",
+      "careersUrl": "https://boards.greenhouse.io/northwindbio-example",
+      "locations": "Springfield; remote",
+      "notes": "Posts on Greenhouse; new roles usually appear on Tuesdays."
+    },
+    {
+      "name": "Cedar Research Institute",
+      "sector": "Hospitals and research institutes",
+      "website": "https://cedar.example.org",
+      "careersUrl": "https://cedar.example.wd3.myworkdayjobs.com/External",
+      "locations": "Springfield",
+      "notes": "Workday: one candidate account per employer."
+    },
+    {
+      "name": "Lumen Health Analytics",
+      "sector": "Health tech and data",
+      "website": "https://lumen.example.com",
+      "careersUrl": "https://jobs.lever.co/lumen-example",
+      "locations": "Remote",
+      "notes": "Lever board."
+    },
+    {
+      "name": "Harbor Clinical Trials",
+      "sector": "Clinical research (CROs)",
+      "website": "https://harbor.example.com",
+      "careersUrl": "https://jobs.ashbyhq.com/harbor-example",
+      "locations": "Springfield; Riverside"
+    },
+    {
+      "name": "Brightwave Software",
+      "sector": "Scientific software",
+      "website": "https://brightwave.example.com",
+      "careersUrl": "https://careers.smartrecruiters.com/BrightwaveExample",
+      "locations": "Remote"
+    }
+  ],
+  "applications": [
+    {
+      "company": "Cedar Research Institute",
+      "title": "Research Program Coordinator",
+      "location": "Springfield (hybrid)",
+      "workModel": "Hybrid",
+      "discipline": "Research programs and grants",
+      "sourceUrl": "https://cedar.example.wd3.myworkdayjobs.com/External/job/Springfield/Research-Program-Coordinator_R-1042",
+      "requisition": "R-1042",
+      "stage": "Preparing",
+      "priority": 1,
+      "whyFit": "Grant writing, coordination of academic sessions and multi-site study experience.",
+      "gaps": "Posting asks for budget management; no confirmed evidence.",
+      "nextAction": "Draft tailored resume and cover letter",
+      "deadline": "2026-12-12",
+      "postingStatus": "open",
+      "lastChecked": "2026-11-20T15:00:00Z"
+    },
+    {
+      "company": "Northwind Biosciences",
+      "title": "Scientific Operations Associate",
+      "location": "Springfield",
+      "workModel": "On-site",
+      "discipline": "Scientific operations",
+      "sourceUrl": "https://boards.greenhouse.io/northwindbio-example/jobs/5550101",
+      "stage": "Review",
+      "priority": 2,
+      "whyFit": "Lab operations and vendor coordination.",
+      "gaps": "Mostly bench duties — confirm the split.",
+      "nextAction": "Check duty split with the posting",
+      "postingStatus": "open",
+      "lastChecked": "2026-11-18T14:00:00Z"
+    },
+    {
+      "company": "Lumen Health Analytics",
+      "title": "Research Partnerships Manager",
+      "location": "Remote",
+      "workModel": "Remote",
+      "discipline": "Research programs and grants",
+      "sourceUrl": "https://jobs.lever.co/lumen-example/0b5e-partnerships",
+      "stage": "Applied",
+      "priority": 2,
+      "appliedAt": "2026-11-10",
+      "nextAction": "Follow up if no reply",
+      "followUpOn": "2026-11-24",
+      "postingStatus": "open"
+    },
+    {
+      "company": "Harbor Clinical Trials",
+      "title": "Clinical Project Associate",
+      "location": "Riverside",
+      "workModel": "Hybrid",
+      "discipline": "Clinical research",
+      "sourceUrl": "https://jobs.ashbyhq.com/harbor-example/7f21",
+      "stage": "Interview",
+      "priority": 1,
+      "appliedAt": "2026-10-30",
+      "nextAction": "Prepare for panel interview on Dec 2",
+      "postingStatus": "closed"
+    },
+    {
+      "company": "Brightwave Software",
+      "title": "Customer Success Scientist",
+      "location": "Remote",
+      "workModel": "Remote",
+      "discipline": "Scientific software",
+      "sourceUrl": "https://careers.smartrecruiters.com/BrightwaveExample/744000-css",
+      "stage": "Rejected",
+      "priority": 3,
+      "appliedAt": "2026-10-12",
+      "notes": "Rejection email on Nov 3; ask for feedback.",
+      "postingStatus": "closed"
+    }
+  ],
+  "researchTasks": [
+    {
+      "title": "Research program coordinator roles near Springfield",
+      "query": "research program coordinator OR grants officer",
+      "location": "Springfield metro"
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "experience",
+      "title": "Research Associate",
+      "organization": "Springfield University, Department of Environmental Science",
+      "period": "2025 – present",
+      "content": "Runs a regional water-quality monitoring program and supervises two summer students.",
+      "reviewStatus": "candidate-confirmed"
+    },
+    {
+      "kind": "achievement",
+      "title": "Led a funded foundation grant application",
+      "organization": "Springfield University",
+      "period": "2024",
+      "content": "Drafted the project plan, budget narrative and partner letters; the department chair was the formal applicant. Funded for three years.",
+      "skills": [
+        "grant writing",
+        "program planning"
+      ],
+      "reviewStatus": "candidate-confirmed",
+      "star": {
+        "situation": "The department needed outside funding to keep a municipal water-quality program running.",
+        "task": "Write the application with the department chair as formal applicant.",
+        "action": "Drafted the project plan, budget narrative and partner letters, and gathered three years of baseline data.",
+        "result": "Funded for three years on first submission."
+      },
+      "metrics": [
+        {
+          "value": "3",
+          "unit": "years of funding",
+          "period": "2024 – 2027"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Award letter (fictional)",
+          "locator": "page 1"
+        }
+      ]
+    },
+    {
+      "kind": "achievement",
+      "title": "Coordinated a four-site field study",
+      "organization": "Springfield University with partner municipalities",
+      "period": "2022 – 2024",
+      "content": "Agreed sampling schedules and methods with four partner municipalities and delivered quarterly results to their councils.",
+      "skills": [
+        "coordination",
+        "stakeholder coordination"
+      ],
+      "reviewStatus": "needs-review",
+      "star": {
+        "situation": "Four municipalities sampled streams on different schedules.",
+        "task": "Align methods so results could be compared.",
+        "action": "Agreed one sampling protocol and a shared calendar with each partner."
+      },
+      "gapsNoted": [
+        "Result not yet measured: ask how comparability or reporting time changed"
+      ]
+    },
+    {
+      "kind": "project",
+      "title": "Water-quality monitoring dashboard",
+      "organization": "Springfield University",
+      "period": "2025",
+      "content": "Built a dashboard for municipal water-quality data; about 40 weekly users (October 2026).",
+      "skills": [
+        "dashboards",
+        "data visualization"
+      ],
+      "reviewStatus": "needs-review"
+    },
+    {
+      "kind": "achievement",
+      "title": "Organized a public speaker series",
+      "organization": "Regional Ecology Society",
+      "period": "2023",
+      "content": "Organized eight public talks, including speakers, schedules and venues.",
+      "skills": [
+        "event coordination"
+      ],
+      "reviewStatus": "candidate-confirmed"
+    },
+    {
+      "kind": "education",
+      "title": "PhD, Environmental Science",
+      "organization": "Springfield University",
+      "period": "2025",
+      "reviewStatus": "source-verified"
+    }
+  ],
+  "exampleResume": {
+    "documentTitle": "Example resume (fictional)",
+    "name": "Alex Rivera",
+    "contact": [
+      "Springfield",
+      "(555) 010-0199",
+      "alex.rivera@example.com"
+    ],
+    "tagline": "Research development and scientific operations",
+    "summary": "Environmental scientist with a PhD in Environmental Science and six years of field and data work. Led a foundation grant application that was funded, coordinated a four-site water-quality study with partner municipalities and built a monitoring dashboard used by about 40 staff each week.",
+    "sections": [
+      {
+        "heading": "Grants and Partnerships",
+        "entries": [
+          {
+            "title": "Foundation grant (applicant: department chair)",
+            "organization": "Springfield University",
+            "dates": "2024",
+            "bullets": [
+              "**Three-year foundation grant.** Drafted the project plan, budget narrative and partner letters for a municipal monitoring program; funded on first submission.",
+              "**Graduate award.** Wrote the proposal for a two-year graduate fellowship."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Research and Field Experience",
+        "intro": "**Publication record:** 6 peer-reviewed articles (3 first author) in journals including *Journal A* and *Journal B*.",
+        "entries": [
+          {
+            "title": "Research Associate",
+            "organization": "Springfield University",
+            "unit": "Department of Environmental Science",
+            "dates": "2025 – present",
+            "bullets": [
+              "Built a dashboard for municipal water-quality data; about 40 weekly users (October 2026).",
+              "Supervise two summer students on sampling and data entry."
+            ]
+          },
+          {
+            "title": "Doctoral Researcher",
+            "organization": "Springfield University",
+            "unit": "Moreno Lab",
+            "dates": "2020 – 2025",
+            "bullets": [
+              "Developed a largely self-directed thesis on urban stream recovery, from field sampling through a first-author publication.",
+              "Agreed sampling schedules and methods with four partner municipalities and delivered quarterly results to their councils."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Partnerships and Program Operations",
+        "entries": [
+          {
+            "title": "Speaker Series Organizer",
+            "organization": "Regional Ecology Society",
+            "dates": "2023",
+            "bullets": [
+              "Organized eight public talks, including speakers, schedules and venues."
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "Education",
+        "type": "education",
+        "entries": [
+          {
+            "title": "PhD, Environmental Science",
+            "organization": "Springfield University",
+            "dates": "2025"
+          },
+          {
+            "title": "BSc, Geography",
+            "organization": "Riverside College",
+            "dates": "2019"
+          }
+        ]
+      },
+      {
+        "heading": "Digital Skills",
+        "paragraphs": [
+          "**Data and tools:** R, Python, SQL, GIS, dashboards",
+          "**Languages:** English, Spanish"
+        ]
+      }
+    ]
+  },
+  "exampleCoverLetter": {
+    "documentTitle": "Example cover letter (fictional)",
+    "name": "Alex Rivera",
+    "heading": "Application for Research Program Coordinator",
+    "contact": [
+      "Alex Rivera",
+      "Springfield",
+      "(555) 010-0199",
+      "alex.rivera@example.com"
+    ],
+    "date": "November 25, 2026",
+    "recipient": [
+      "Hiring Committee",
+      "Research Programs Office",
+      "Cedar Research Institute"
+    ],
+    "salutation": "Dear Hiring Committee,",
+    "paragraphs": [
+      "I am applying for the Research Program Coordinator position because I enjoy turning research ideas into fundable, well-run programs. I hold a PhD in Environmental Science from Springfield University, and the Institute's focus on shared research infrastructure is exactly where I want to apply that experience.",
+      "In 2024 I drafted the project plan, budget narrative and partner letters for a foundation grant that funds a three-year water-quality program, with my department chair as the formal applicant. I also wrote the successful proposal for my graduate fellowship.",
+      "Your posting emphasizes coordination across sites. I agree sampling schedules and methods with four partner municipalities and report results to their councils every quarter. I also organized an eight-talk public speaker series for a regional society, from speakers to venues.",
+      "I build tools that help researchers use data. My water-quality dashboard has about 40 weekly users, and I would bring the same practical approach to the Institute's program reporting. I have not managed a program budget yet, and I would value learning the Institute's processes.",
+      "I would welcome the chance to discuss how my grant-writing and coordination experience could support your programs. Thank you for considering my application."
+    ],
+    "closing": "Sincerely,",
+    "signature": "Alex Rivera"
+  }
+}

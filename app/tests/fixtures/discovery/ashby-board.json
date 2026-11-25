@@ -1,0 +1,46 @@
+{
+  "apiVersion": "1",
+  "jobs": [
+    {
+      "id": "aaaaaaaa-0000-4000-8000-000000000001",
+      "title": "Computational Chemist",
+      "department": "Science",
+      "team": "Discovery Chemistry",
+      "employmentType": "FullTime",
+      "location": "Ottawa, ON",
+      "secondaryLocations": [{ "location": "Remote - Canada", "address": { "postalAddress": { "addressCountry": "Canada" } } }],
+      "publishedAt": "2026-11-10T14:29:08.532+00:00",
+      "isListed": true,
+      "isRemote": false,
+      "workplaceType": "Hybrid",
+      "address": { "postalAddress": { "addressCountry": "Canada", "addressLocality": "Ottawa" } },
+      "jobUrl": "https://jobs.ashbyhq.com/fabrikambio/aaaaaaaa-0000-4000-8000-000000000001",
+      "applyUrl": "https://jobs.ashbyhq.com/fabrikambio/aaaaaaaa-0000-4000-8000-000000000001/application",
+      "descriptionPlain": "Fabrikam Bio is looking for a computational chemist to model small molecules."
+    },
+    {
+      "id": "aaaaaaaa-0000-4000-8000-000000000002",
+      "title": "Hidden Internal Role",
+      "department": "Science",
+      "employmentType": "FullTime",
+      "location": "Ottawa, ON",
+      "publishedAt": "2026-11-11T14:29:08.532+00:00",
+      "isListed": false,
+      "isRemote": false,
+      "jobUrl": "https://jobs.ashbyhq.com/fabrikambio/aaaaaaaa-0000-4000-8000-000000000002"
+    },
+    {
+      "id": "aaaaaaaa-0000-4000-8000-000000000003",
+      "title": "Lab Technician",
+      "department": "Operations",
+      "employmentType": "Intern",
+      "location": "Remote - North America",
+      "publishedAt": "2026-11-12T14:29:08.532+00:00",
+      "isListed": true,
+      "isRemote": true,
+      "workplaceType": "Remote",
+      "jobUrl": "https://jobs.ashbyhq.com/fabrikambio/aaaaaaaa-0000-4000-8000-000000000003",
+      "descriptionPlain": "Support the lab."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "documentTitle": "Resume master",
+  "name": "{{YOUR NAME}}",
+  "contact": ["{{CITY, REGION}}", "{{PHONE}}", "{{EMAIL}}", "{{LINK (optional)}}"],
+  "tagline": "{{Optional italic tagline, e.g. Research development and scientific communications}}",
+  "summary": "{{Two or three sentences written for this role, using only confirmed evidence. Use *italic* or **bold** sparingly.}}",
+  "sections": [
+    {
+      "heading": "{{Section heading that matches the role, e.g. Research Experience}}",
+      "intro": "{{Optional one-line section summary, e.g. totals across the section}}",
+      "entries": [
+        {
+          "title": "{{ROLE TITLE}}",
+          "organization": "{{ORGANIZATION}}",
+          "unit": "{{TEAM, LAB OR UNIT (optional)}}",
+          "dates": "{{START – END}}",
+          "bullets": [
+            "**{{Optional lead-in:}}** {{What you did and the result it produced}}",
+            "{{Another relevant, supported achievement}}",
+            "{{A third achievement; the last bullet in each role gets a light rule under it}}"
+          ]
+        },
+        {
+          "title": "{{ROLE TITLE}}",
+          "organization": "{{ORGANIZATION}}",
+          "dates": "{{START – END}}",
+          "bullets": ["{{Achievement}}", "{{Achievement}}"]
+        }
+      ]
+    },
+    {
+      "heading": "{{Second section heading, e.g. Partnerships and Program Operations}}",
+      "entries": [
+        {
+          "title": "{{ROLE TITLE}}",
+          "organization": "{{ORGANIZATION}}",
+          "dates": "{{START – END}}",
+          "bullets": ["{{Achievement}}", "{{Achievement}}"]
+        }
+      ]
+    },
+    {
+      "heading": "{{Education}}",
+      "type": "education",
+      "entries": [
+        { "title": "{{DEGREE}}", "organization": "{{INSTITUTION}}", "dates": "{{YEAR OR STATUS}}" },
+        { "title": "{{DEGREE}}", "organization": "{{INSTITUTION}}", "dates": "{{YEAR}}" }
+      ]
+    },
+    {
+      "heading": "{{Skills or Additional Section}}",
+      "paragraphs": [
+        "**{{Category}}:** {{Relevant skills, tools, languages or honours, separated by commas}}",
+        "**{{Category}}:** {{More items}}"
+      ]
+    }
+  ]
+}

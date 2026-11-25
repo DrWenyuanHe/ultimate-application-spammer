@@ -1,0 +1,51 @@
+{
+  "description": "Every visual setting for generated cover letters lives here. One page, Arial body with a Calibri bold title line ('Application for <role>'), no divider rules. Change a value, then ask your assistant to refresh the templates (operation docs.refresh-templates) to refresh the Word master in '3 Templates'.",
+  "page": {
+    "size": "Letter",
+    "marginsInches": {
+      "top": 0.68,
+      "right": 0.78,
+      "bottom": 0.62,
+      "left": 0.78
+    }
+  },
+  "font": "Arial",
+  "color": "000000",
+  "lineSpacing": 1.06,
+  "name": {
+    "font": "Calibri",
+    "sizePt": 17,
+    "bold": true,
+    "uppercase": false,
+    "align": "left",
+    "afterPt": 5
+  },
+  "contact": {
+    "sizePt": 10,
+    "separator": "  |  ",
+    "afterPt": 9
+  },
+  "body": {
+    "sizePt": 11,
+    "afterPt": 8
+  },
+  "date": {
+    "afterPt": 10
+  },
+  "recipient": {
+    "afterPt": 10
+  },
+  "salutation": {
+    "afterPt": 8
+  },
+  "closing": {
+    "afterPt": 4
+  },
+  "signature": {
+    "afterPt": 0
+  },
+  "targetWords": {
+    "min": 280,
+    "max": 380
+  }
+}

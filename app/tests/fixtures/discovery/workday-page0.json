@@ -1,0 +1,28 @@
+{
+  "total": 3,
+  "jobPostings": [
+    {
+      "title": "Senior Research Scientist",
+      "externalPath": "/job/Canada-Toronto-King-Street/Senior-Research-Scientist_R0012345",
+      "locationsText": "Canada, Toronto",
+      "postedOn": "Posted Today",
+      "bulletFields": ["R0012345"]
+    },
+    {
+      "title": "Research Scientist, Imaging",
+      "externalPath": "/job/Canada-Montreal-Campus/Research-Scientist--Imaging_R0012346",
+      "locationsText": "2 Locations",
+      "postedOn": "Posted 3 Days Ago",
+      "bulletFields": ["R0012346"]
+    },
+    {
+      "title": "Research Scientist (Remote)",
+      "externalPath": "/job/USA-Remote/Research-Scientist--Remote-_R0012347",
+      "locationsText": "USA, Remote",
+      "postedOn": "Posted 30+ Days Ago",
+      "bulletFields": []
+    }
+  ],
+  "facets": [],
+  "userAuthenticated": false
+}

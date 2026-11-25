@@ -1,0 +1,15 @@
+{
+  "about": "Steps an agent follows before a resume, CV, cover letter or written answer is considered ready for the candidate to submit.",
+  "steps": [
+    "Start from the brief (`node app/cli.mjs op run brief.get --input '{\"applicationId\":\"ID\"}'`). Apply active writing rules within their scope; treat proposed rules as suggestions to raise with the candidate.",
+    "Re-open the live employer posting and record when it was checked. Note the deadline, required fields and word limits, or say they were not inspected.",
+    "Build a short qualification-to-evidence map and list the gaps explicitly.",
+    "Ask the candidate targeted questions for missing facts (dates, authorship, metric period) and save the answers in the career library.",
+    "Generate the document from the format files in '3 Templates' and change only what the role needs. Record each change and its reason.",
+    "Run an independent review pass (a second agent or a fresh read) for factual scope, attribution, chronology, fit and layout. Apply optional suggestions only if they add no claim.",
+    "Export the PDF and look at every page: clipping, overlaps, missing characters, a heading stranded at the bottom of a page, role/date collisions, page count.",
+    "Check text and structure: no {{placeholders}} left, no claims carried over from an example, fonts as set in the format file, contact details identical across documents, word count within limits.",
+    "Save the result as a new material version in the career library. Earlier versions are never overwritten.",
+    "Give it to the candidate for a final read. Submission then follows their saved submission mode (see app/skills/submit-application.md); afterwards record exactly what was filed, including every question and answer, with the `submissions.record` operation."
+  ]
+}

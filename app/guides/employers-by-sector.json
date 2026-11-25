@@ -1,0 +1,2653 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-25",
+  "about": "Optional starter list of employers grouped by sector, weighted toward Toronto/GTA and Canada. Nothing here is loaded automatically: import only the sectors you want. Careers links and hiring platforms were checked on the checkedAt date; employers change their careers sites, so always open the employer's own posting before applying.",
+  "sectors": [
+    {
+      "id": "pharma",
+      "sector": "Pharmaceutical companies",
+      "description": "Established drug makers with Canadian offices (medical affairs, regulatory, market access, commercial).",
+      "typicalRoles": [
+        "Medical science liaison",
+        "Medical information specialist",
+        "Regulatory affairs associate",
+        "Clinical research associate",
+        "Market access / HEOR analyst",
+        "Pharmacovigilance associate"
+      ],
+      "employers": [
+        {
+          "name": "AbbVie Canada",
+          "website": "https://www.abbvie.ca/en/",
+          "careersUrl": "https://careers.abbvie.com/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Alexion (AstraZeneca Rare Disease)",
+          "website": "https://alexion.com/",
+          "careersUrl": "https://careers.astrazeneca.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "Openings are listed on the AstraZeneca careers site; filter by this company's name."
+        },
+        {
+          "name": "Amgen Canada",
+          "website": "https://www.amgen.ca/",
+          "careersUrl": "https://careers.amgen.com/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Apotex",
+          "website": "https://www.apotex.com/ca",
+          "careersUrl": "https://careers.apotex.com/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Astellas Pharma Canada",
+          "website": "https://www.astellas.com/en/",
+          "careersUrl": "https://www.astellas.com/en/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "AstraZeneca",
+          "website": "https://www.astrazeneca.com/",
+          "careersUrl": "https://careers.astrazeneca.com/canada",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Bausch Health Canada",
+          "website": "https://bauschhealth.ca/",
+          "careersUrl": "https://careers.bauschhealth.com/",
+          "platform": "SuccessFactors",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Bayer",
+          "website": "https://www.bayer.com/en/ca/canada",
+          "careersUrl": "https://www.bayer.com/en/career",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Biogen Canada",
+          "website": "https://www.biogen.ca/en-ca/",
+          "careersUrl": "https://www.biogen.ca/en-ca/careers.html",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "BioSyent",
+          "website": "https://www.biosyent.com/",
+          "careersUrl": "https://www.biosyent.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Boehringer Ingelheim Canada",
+          "website": "https://www.boehringer-ingelheim.com/ca",
+          "careersUrl": "https://www.boehringer-ingelheim.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Bristol Myers Squibb Canada",
+          "website": "https://www.bms.com/ca/en/",
+          "careersUrl": "https://careers.bms.com/",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Chiesi Canada",
+          "website": "https://www.chiesi.ca/",
+          "careersUrl": "https://careers.chiesi.com/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Eisai Canada",
+          "website": "https://ca.eisai.com/en-CA",
+          "careersUrl": "https://careers.eisai.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Eli Lilly Canada",
+          "website": "https://www.lilly.com/en-ca",
+          "careersUrl": "https://careers.lilly.com/us/en",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "EMD Serono / Merck KGaA",
+          "website": "https://www.emdserono.ca/ca-en/",
+          "careersUrl": "https://careers.emdgroup.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Gilead Sciences Canada",
+          "website": "https://www.gilead.com/en-ca",
+          "careersUrl": "https://www.gilead.com/en-ca/careers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Grifols Canada",
+          "website": "https://www.grifols.ca/",
+          "careersUrl": "https://www.grifols.com/en/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "GSK",
+          "website": "https://ca.gsk.com/en-ca/",
+          "careersUrl": "https://ca.gsk.com/en-ca/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Ipsen Canada",
+          "website": "https://www.ipsen.com/canada/",
+          "careersUrl": "https://careers.ipsen.com/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Jazz Pharmaceuticals Canada",
+          "website": "https://www.jazzpharma.com/",
+          "careersUrl": "https://careers.jazzpharma.com/jobs/ca-on-mississauga/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Johnson & Johnson Innovative Medicine / Janssen",
+          "website": "https://www.jnj.com/innovativemedicine/canada",
+          "careersUrl": "https://www.careers.jnj.com/en/locations/north-america/canada/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Lundbeck Canada",
+          "website": "https://www.lundbeck.com/ca/en",
+          "careersUrl": "https://jobs.lundbeck/",
+          "platform": "SuccessFactors",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Merck Canada / MSD",
+          "website": "https://www.merck.ca/en/",
+          "careersUrl": "https://jobs.merck.com/us/en/mrl-canada",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Novartis",
+          "website": "https://www.novartis.com/ca-en/",
+          "careersUrl": "https://www.novartis.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Novo Nordisk Canada",
+          "website": "https://www.novonordisk.ca/",
+          "careersUrl": "https://www.novonordisk.com/careers.html",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Organon Canada",
+          "website": "https://www.organon.com/canada-en/",
+          "careersUrl": "https://jobs.organon.com/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Otsuka Canada",
+          "website": "https://otsukacanada.com/",
+          "careersUrl": "https://otsukacanada.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Pfizer Canada",
+          "website": "https://www.pfizer.ca/en",
+          "careersUrl": "https://www.pfizer.com/about/careers",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Recordati Rare Diseases Canada",
+          "website": "https://recordatirarediseases.com/",
+          "careersUrl": "https://careers.recordati.com/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. This is the Recordati group careers site; filter by Canada. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Regeneron Canada",
+          "website": "https://www.regeneron.com/",
+          "careersUrl": "https://careers.regeneron.com/en/jobs/?country=Canada&location=Mississauga",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Roche",
+          "website": "https://www.rochecanada.com/",
+          "careersUrl": "https://careers.roche.com/global/en/mississauga",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Sanofi",
+          "website": "https://www.sanofi.com/",
+          "careersUrl": "https://jobs.sanofi.com/en/canada",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Servier Canada",
+          "website": "https://servier.ca/en/",
+          "careersUrl": "https://jobs.servier.com/",
+          "platform": "SuccessFactors",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Sobi Canada",
+          "website": "https://www.sobi.com/canada/en",
+          "careersUrl": "https://www.sobi.com/en/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Takeda Canada",
+          "website": "https://www.takeda.com/en-ca/",
+          "careersUrl": "https://www.takedajobs.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Teva Canada",
+          "website": "https://www.tevacanada.com/",
+          "careersUrl": "https://www.careers.teva/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "UCB Canada",
+          "website": "https://www.ucb-canada.ca/",
+          "careersUrl": "https://careers.ucb.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        }
+      ]
+    },
+    {
+      "id": "biotech",
+      "sector": "Biotech & therapeutics startups",
+      "description": "Smaller drug, cell-therapy, gene-therapy and ag-biotech companies, often research-stage.",
+      "typicalRoles": [
+        "Research scientist",
+        "Research associate",
+        "Scientist, assay development",
+        "Project / alliance manager",
+        "Business development associate"
+      ],
+      "employers": [
+        {
+          "name": "AbCellera",
+          "website": "https://www.abcellera.com/",
+          "careersUrl": "https://www.abcellera.com/current-openings",
+          "platform": "Greenhouse",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Acuitas Therapeutics",
+          "website": "https://acuitastx.com/",
+          "careersUrl": "https://acuitastx.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Allarta Life Science",
+          "website": "https://allarta.com/",
+          "careersUrl": "https://allarta.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Aptose Biosciences",
+          "website": "https://www.aptose.com/",
+          "careersUrl": "https://www.aptose.com/careers",
+          "platform": "BambooHR",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Arch Biopartners",
+          "website": "https://archbiopartners.com/",
+          "careersUrl": "https://archbiopartners.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Aspect Biosystems",
+          "website": "https://www.aspectbiosystems.com/",
+          "careersUrl": "https://aspectbiosystems.com/careers",
+          "platform": "Greenhouse",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Avicanna",
+          "website": "https://avicanna.com/",
+          "careersUrl": "https://avicanna.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "BlueRock Therapeutics",
+          "website": "https://www.bluerocktx.com/",
+          "careersUrl": "https://www.bluerocktx.com/become-a-bluerocker/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Deep Genomics",
+          "website": "https://www.deepgenomics.com/",
+          "careersUrl": "https://www.deepgenomics.com/careers",
+          "platform": "Lever",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Lever job site. Lever: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Evolve Biologics",
+          "website": "https://www.evolvebiologics.com/",
+          "careersUrl": "https://www.evolvebiologics.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Fusion Pharmaceuticals (AstraZeneca)",
+          "website": "https://fusionpharma.com/",
+          "careersUrl": "https://fusionpharma.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Intrepid Labs",
+          "website": "https://www.intrepidlabs.tech/",
+          "careersUrl": "https://www.intrepidlabs.tech/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Medicenna Therapeutics",
+          "website": "https://www.medicenna.com/",
+          "careersUrl": "https://www.medicenna.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Mediphage Bioceuticals",
+          "website": "https://www.mediphage.ca/",
+          "careersUrl": "https://www.mediphage.ca/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Molagri",
+          "website": "https://molagri.com/",
+          "careersUrl": "https://molagri.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Noa Therapeutics",
+          "website": "https://noatherapeutics.com/",
+          "careersUrl": "https://noatherapeutics.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "OmniaBio",
+          "website": "https://omniabio.com/",
+          "careersUrl": "https://omniabio.com/careers/",
+          "platform": "Jobvite",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Jobvite job site. Jobvite: usually no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "POINT Biopharma (Lilly)",
+          "website": "https://www.lilly.com/",
+          "careersUrl": "https://careers.lilly.com/us/en",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "Openings are listed on the Eli Lilly careers site; filter by this company's name."
+        },
+        {
+          "name": "Providence Therapeutics",
+          "website": "https://providencetherapeutics.com/",
+          "careersUrl": "https://providencetherapeutics.com/careers-page/careers.html",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Radiant Biotherapeutics",
+          "website": "https://www.radiantbio.com/",
+          "careersUrl": "https://www.radiantbio.com/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Recursion",
+          "website": "https://recursion.com/",
+          "careersUrl": "https://recursion.com/careers",
+          "platform": "Greenhouse",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Satellos Bioscience",
+          "website": "https://satellos.com/",
+          "careersUrl": "https://satellos.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Specific Biologics",
+          "website": "https://www.specificbiologics.com/",
+          "careersUrl": "https://www.specificbiologics.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Treadwell Therapeutics",
+          "website": "https://treadwelltx.com/",
+          "careersUrl": "https://treadwelltx.com/careers/",
+          "platform": "Greenhouse",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Triumvira Immunologics",
+          "website": "https://triumvira.com/",
+          "careersUrl": "https://triumvira.com/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Vasomune Therapeutics",
+          "website": "https://vasomune.com/",
+          "careersUrl": "https://vasomune.com/about-us/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Vive Crop Protection",
+          "website": "https://www.vivecrop.com/",
+          "careersUrl": "https://www.vivecrop.com/careers",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Zucara Therapeutics",
+          "website": "https://www.zucara.ca/",
+          "careersUrl": "https://www.zucara.ca/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        }
+      ]
+    },
+    {
+      "id": "hospitals-institutes",
+      "sector": "Hospitals & research institutes",
+      "description": "Research hospitals and independent research institutes, mostly publicly funded.",
+      "typicalRoles": [
+        "Research associate",
+        "Research coordinator",
+        "Clinical research coordinator",
+        "Grants / research development officer",
+        "Data analyst",
+        "Lab manager"
+      ],
+      "employers": [
+        {
+          "name": "Baycrest — Rotman Research Institute",
+          "website": "https://www.baycrest.org/",
+          "careersUrl": "https://www.baycrest.org/careers-at-baycrest/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Centre for Addiction and Mental Health (CAMH)",
+          "website": "https://www.camh.ca/",
+          "careersUrl": "https://iaemup.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CAMH/jobs",
+          "platform": "Oracle Recruiting",
+          "locations": "Toronto/GTA",
+          "notes": "Oracle Recruiting: you usually sign in for each employer with your email and a one-time code."
+        },
+        {
+          "name": "Holland Bloorview Kids Rehabilitation Hospital — Bloorview Research Institute",
+          "website": "https://hollandbloorview.ca/",
+          "careersUrl": "https://research.hollandbloorview.ca/about-us/working-with-us",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "ICES",
+          "website": "https://www.ices.on.ca/",
+          "careersUrl": "https://www.ices.on.ca/careers/",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Kensington Health — Research Institute",
+          "website": "https://www.kensingtonhealth.org/",
+          "careersUrl": "https://careers.kensingtonhealth.org/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Ontario Institute for Cancer Research (OICR)",
+          "website": "https://oicr.on.ca/",
+          "careersUrl": "https://oicr.on.ca/careers/",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Sinai Health — Lunenfeld-Tanenbaum Research Institute",
+          "website": "https://www.sinaihealth.ca/",
+          "careersUrl": "https://www.sinaihealth.ca/careers-at-sinai-health/research-jobs",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Sunnybrook Health Sciences Centre — Sunnybrook Research Institute",
+          "website": "https://sunnybrook.ca/",
+          "careersUrl": "https://research.sunnybrook.ca/careers-and-students/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "The Hospital for Sick Children (SickKids)",
+          "website": "https://www.sickkids.ca/",
+          "careersUrl": "https://www.sickkids.ca/en/careers-volunteer/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Unity Health Toronto",
+          "website": "https://unityhealth.to/",
+          "careersUrl": "https://research.unityhealth.to/resources/research-employment/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "University Health Network",
+          "website": "https://www.uhn.ca/",
+          "careersUrl": "https://careers.smartrecruiters.com/UniversityHealthNetwork",
+          "platform": "SmartRecruiters",
+          "locations": "Toronto/GTA",
+          "notes": "SmartRecruiters: you can apply as a guest; an account lets you reuse your profile."
+        },
+        {
+          "name": "Vector Institute",
+          "website": "https://vectorinstitute.ai/",
+          "careersUrl": "https://vectorinstitute.ai/about/careers/open-positions/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Women’s College Hospital — Research and Innovation Institute",
+          "website": "https://www.womenscollegehospital.ca/",
+          "careersUrl": "https://www.womensacademics.ca/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        }
+      ]
+    },
+    {
+      "id": "universities",
+      "sector": "Universities & colleges",
+      "description": "University staff, research and academic positions (staff jobs and faculty jobs are often posted separately).",
+      "typicalRoles": [
+        "Research associate",
+        "Postdoctoral fellow",
+        "Research grants officer",
+        "Lab manager",
+        "Program coordinator",
+        "Lecturer / faculty"
+      ],
+      "employers": [
+        {
+          "name": "McMaster University",
+          "website": "https://www.mcmaster.ca/",
+          "careersUrl": "https://hr.mcmaster.ca/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Ontario Tech University",
+          "website": "https://ontariotechu.ca/",
+          "careersUrl": "https://hr.ontariotechu.ca/working-at-ontario-tech/careers/index.php",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Toronto Metropolitan University",
+          "website": "https://www.torontomu.ca/",
+          "careersUrl": "https://www.torontomu.ca/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "University of Toronto",
+          "website": "https://www.utoronto.ca/",
+          "careersUrl": "https://jobs.utoronto.ca/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "University of Waterloo",
+          "website": "https://uwaterloo.ca/",
+          "careersUrl": "https://uwaterloo.ca/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "York University",
+          "website": "https://www.yorku.ca/",
+          "careersUrl": "https://www.yorku.ca/jobs/",
+          "platform": "Technomedia",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Technomedia job site."
+        }
+      ]
+    },
+    {
+      "id": "clinical-research",
+      "sector": "Clinical research, CROs & testing labs",
+      "description": "Contract research organizations, early-phase clinics, preclinical and analytical testing labs.",
+      "typicalRoles": [
+        "Clinical research associate (CRA)",
+        "Clinical trial assistant",
+        "Study start-up specialist",
+        "Project manager",
+        "Regulatory / quality specialist",
+        "Laboratory analyst"
+      ],
+      "employers": [
+        {
+          "name": "Alimentiv",
+          "website": "https://alimentiv.com/",
+          "careersUrl": "https://jobs.lever.co/alimentiv-2/",
+          "platform": "Lever",
+          "locations": "Toronto/GTA",
+          "notes": "Lever: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Altasciences",
+          "website": "https://www.altasciences.com/",
+          "careersUrl": "https://canada.altasciences.com/careers",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "BioPharma Services",
+          "website": "https://biopharmaservices.com/",
+          "careersUrl": "https://biopharmaservices.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "CellCarta",
+          "website": "https://cellcarta.com/",
+          "careersUrl": "https://cellcarta.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Charles River Laboratories",
+          "website": "https://www.criver.com/",
+          "careersUrl": "https://careers.criver.com/go/Voir-tous-les-emplois-%28fr_CA%29/3657800/",
+          "platform": "SuccessFactors",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "dicentra",
+          "website": "https://dicentra.com/",
+          "careersUrl": "https://dicentra.com/careers/open-opportunities",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Dynacare (Labcorp)",
+          "website": "https://www.dynacare.ca/",
+          "careersUrl": "https://www.dynacare.ca/careers/dynacare-careers.aspx",
+          "platform": "Jobvite",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Jobvite job site. Jobvite: usually no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Eurofins Scientific",
+          "website": "https://www.eurofins.ca/en/",
+          "careersUrl": "https://jobs.smartrecruiters.com/Eurofins",
+          "platform": "SmartRecruiters",
+          "locations": "Toronto/GTA",
+          "notes": "SmartRecruiters: you can apply as a guest; an account lets you reuse your profile."
+        },
+        {
+          "name": "Fortrea",
+          "website": "https://www.fortrea.com/",
+          "careersUrl": "https://fortrea.wd1.myworkdayjobs.com/en-US/Fortrea",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "ICON plc",
+          "website": "https://www.iconplc.com/",
+          "careersUrl": "https://careers.iconplc.com/jobs-in-canada",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Intertek",
+          "website": "https://www.intertek.com/",
+          "careersUrl": "https://www.intertek.com/careers/",
+          "platform": "Oracle Recruiting",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Oracle Recruiting job site. Oracle Recruiting: you usually sign in for each employer with your email and a one-time code."
+        },
+        {
+          "name": "IQVIA",
+          "website": "https://www.iqvia.com/",
+          "careersUrl": "https://jobs.iqvia.com/en",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Medpace",
+          "website": "https://www.medpace.com/",
+          "careersUrl": "https://www.medpace.com/careers/",
+          "platform": "iCIMS",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "Parexel",
+          "website": "https://www.parexel.com/",
+          "careersUrl": "https://jobs.parexel.com/en",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Pharma Medica Research",
+          "website": "https://www.pharmamedica.com/",
+          "careersUrl": "https://pharma-medica-research-inc.breezy.hr/",
+          "platform": "Breezy HR",
+          "locations": "Toronto/GTA",
+          "notes": "Breezy HR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "SGS Canada",
+          "website": "https://www.sgs.com/en-ca",
+          "careersUrl": "https://www.sgs.com/en-ca/our-company/careers-at-sgs/job-opportunities",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Syneos Health",
+          "website": "https://www.syneoshealth.com/",
+          "careersUrl": "https://www.syneoshealth.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        }
+      ]
+    },
+    {
+      "id": "lab-tools",
+      "sector": "Scientific instruments & lab tools",
+      "description": "Instruments, reagents, genomics and bioprocess tools used by labs.",
+      "typicalRoles": [
+        "Field application scientist",
+        "Technical support scientist",
+        "Product specialist",
+        "Account manager",
+        "Product manager",
+        "Scientific marketing"
+      ],
+      "employers": [
+        {
+          "name": "Agilent Technologies",
+          "website": "https://www.agilent.com/",
+          "careersUrl": "https://careers.agilent.com/locations/americas/canada/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Beckman Coulter",
+          "website": "https://www.beckman.com/",
+          "careersUrl": "https://jobs.danaher.com/global/en",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "Openings are listed on the Danaher careers site; filter by this company's name."
+        },
+        {
+          "name": "Bio-Rad Laboratories",
+          "website": "https://www.bio-rad.com/",
+          "careersUrl": "https://careers.bio-rad.com/homepage",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Bio-Techne",
+          "website": "https://www.bio-techne.com/",
+          "careersUrl": "https://www.bio-techne.com/about/careers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Bruker",
+          "website": "https://www.bruker.com/",
+          "careersUrl": "https://www.bruker.com/en/careers.html",
+          "platform": "iCIMS",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "Cedarlane",
+          "website": "https://www.cedarlanelabs.com/",
+          "careersUrl": "https://www.cedarlanelabs.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Cytiva",
+          "website": "https://www.cytivalifesciences.com/",
+          "careersUrl": "https://jobs.danaher.com/global/en",
+          "platform": "Company site",
+          "locations": "Canada",
+          "notes": "Openings are listed on the Danaher careers site; filter by this company's name."
+        },
+        {
+          "name": "Danaher",
+          "website": "https://www.danaher.com/",
+          "careersUrl": "https://danaher.wd1.myworkdayjobs.com/DanaherJobs",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "DMark Biosciences",
+          "website": "https://dmarkbio.com/",
+          "careersUrl": "https://dmarkbio.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Eppendorf Canada",
+          "website": "https://www.eppendorf.com/ca-en/",
+          "careersUrl": "https://www.eppendorf.com/ca-en/company-careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Illumina",
+          "website": "https://www.illumina.com/",
+          "careersUrl": "https://www.illumina.com/company/careers.html",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Leica Biosystems",
+          "website": "https://www.leicabiosystems.com/",
+          "careersUrl": "https://danaher.wd1.myworkdayjobs.com/DanaherJobs",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Openings are listed on the Danaher careers site; filter by this company's name. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "LGC Group / Toronto Research Chemicals",
+          "website": "https://www.lgcgroup.com/",
+          "careersUrl": "https://careers.smartrecruiters.com/lgcgroup",
+          "platform": "SmartRecruiters",
+          "locations": "Toronto/GTA",
+          "notes": "SmartRecruiters: you can apply as a guest; an account lets you reuse your profile."
+        },
+        {
+          "name": "QIAGEN",
+          "website": "https://www.qiagen.com/",
+          "careersUrl": "https://www.qiagen.com/us/careers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Revvity",
+          "website": "https://www.revvity.com/",
+          "careersUrl": "https://jobs.revvity.com/search-jobs",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Sartorius",
+          "website": "https://www.sartorius.com/",
+          "careersUrl": "https://www.sartorius.com/en/company/careers/vacancies-job-opportunities",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "SCIEX",
+          "website": "https://sciex.com/",
+          "careersUrl": "https://jobs.danaher.com/global/en",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "Openings are listed on the Danaher careers site; filter by this company's name."
+        },
+        {
+          "name": "STEMCELL Technologies",
+          "website": "https://www.stemcell.com/",
+          "careersUrl": "https://jobs.stemcell.com/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Thermo Fisher Scientific",
+          "website": "https://www.thermofisher.com/",
+          "careersUrl": "https://jobs.thermofisher.com/global/en/canada-jobs/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Waters Corporation",
+          "website": "https://www.waters.com/",
+          "careersUrl": "https://www.waters.com/nextgen/us/en/about-waters/careers.html",
+          "platform": "iCIMS",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "ZEISS Group",
+          "website": "https://www.zeiss.ca/",
+          "careersUrl": "https://zeissgroup.wd3.myworkdayjobs.com/en-US/External",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        }
+      ]
+    },
+    {
+      "id": "medtech",
+      "sector": "Medical devices & diagnostics",
+      "description": "Medical device, imaging and diagnostic companies.",
+      "typicalRoles": [
+        "Clinical specialist",
+        "Regulatory affairs specialist",
+        "Field service / application specialist",
+        "Territory sales representative",
+        "Quality engineer"
+      ],
+      "employers": [
+        {
+          "name": "Abbott",
+          "website": "https://www.abbott.com/",
+          "careersUrl": "https://abbott.wd5.myworkdayjobs.com/abbottcareers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Adela",
+          "website": "https://www.adelabio.com/",
+          "careersUrl": "https://www.adelabio.com/adela-careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Becton Dickinson",
+          "website": "https://www.bd.com/",
+          "careersUrl": "https://jobs.bd.com/en/search-jobs/Canada",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "GE HealthCare",
+          "website": "https://www.gehealthcare.com/",
+          "careersUrl": "https://careers.gehealthcare.com/global/en",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Medtronic",
+          "website": "https://www.medtronic.com/",
+          "careersUrl": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Siemens Healthineers",
+          "website": "https://www.siemens-healthineers.com/",
+          "careersUrl": "https://careers.siemens-healthineers.com/global/en/search-results?keywords=Canada",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Stryker",
+          "website": "https://www.stryker.com/",
+          "careersUrl": "https://stryker.wd1.myworkdayjobs.com/StrykerCareers",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        }
+      ]
+    },
+    {
+      "id": "health-tech",
+      "sector": "Health tech & life-science software",
+      "description": "Software and services for health systems, clinical trials and life-science R&D.",
+      "typicalRoles": [
+        "Customer success manager",
+        "Implementation specialist",
+        "Solutions consultant",
+        "Product manager",
+        "Clinical / scientific data analyst"
+      ],
+      "employers": [
+        {
+          "name": "AlayaCare",
+          "website": "https://alayacare.com/",
+          "careersUrl": "https://alayacare.com/ca/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Benchling",
+          "website": "https://www.benchling.com/",
+          "careersUrl": "https://www.benchling.com/careers",
+          "platform": "Ashby",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "BenchSci",
+          "website": "https://www.benchsci.com/",
+          "careersUrl": "https://www.benchsci.com/careers",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Certara",
+          "website": "https://www.certara.com/",
+          "careersUrl": "https://careers.certara.com/",
+          "platform": "iCIMS",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "DNAstack",
+          "website": "https://dnastack.com/",
+          "careersUrl": "https://dnastack.com/careers/",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "League",
+          "website": "https://league.com/",
+          "careersUrl": "https://league.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Maple",
+          "website": "https://www.getmaple.ca/",
+          "careersUrl": "https://www.getmaple.ca/careers/",
+          "platform": "Lever",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Lever job site. Lever: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "McKesson Canada",
+          "website": "https://www.mckesson.ca/",
+          "careersUrl": "https://careers.mckesson.com/en",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Medidata",
+          "website": "https://www.medidata.com/",
+          "careersUrl": "https://www.medidata.com/en/careers/job-search/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "PhenoTips",
+          "website": "https://phenotips.com/",
+          "careersUrl": "https://phenotips.com/team/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No careers page; the Team page lists an email contact for hiring enquiries."
+        },
+        {
+          "name": "PointClickCare",
+          "website": "https://pointclickcare.com/",
+          "careersUrl": "https://jobs.lever.co/pointclickcare",
+          "platform": "Lever",
+          "locations": "Toronto/GTA",
+          "notes": "Lever: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "SciLeads",
+          "website": "https://scileads.com/",
+          "careersUrl": "https://job-boards.greenhouse.io/scileads",
+          "platform": "Greenhouse",
+          "locations": "Canada-eligible remote",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "UnitedHealth Group / Optum Canada",
+          "website": "https://www.unitedhealthgroup.com/",
+          "careersUrl": "https://careers.unitedhealthgroup.com/location/canada-jobs/34088/6251999/2",
+          "platform": "Taleo",
+          "locations": "Canada-eligible remote",
+          "notes": "This careers page hands you off to the employer's Taleo job site. Taleo: use Apply as Guest if offered; otherwise create an account for this employer."
+        },
+        {
+          "name": "Veeva Systems",
+          "website": "https://www.veeva.com/",
+          "careersUrl": "https://careers.veeva.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        }
+      ]
+    },
+    {
+      "id": "medcomms-consulting",
+      "sector": "Medical communications, HEOR & life-science consulting",
+      "description": "Agencies and consultancies serving pharma: medical writing, health economics and outcomes research (HEOR), market access, commercial strategy.",
+      "typicalRoles": [
+        "Medical writer",
+        "Scientific / medical editor",
+        "HEOR / evidence synthesis analyst",
+        "Market access consultant",
+        "Account manager",
+        "Associate consultant"
+      ],
+      "employers": [
+        {
+          "name": "Analysis Group",
+          "website": "https://www.analysisgroup.com/",
+          "careersUrl": "https://www.analysisgroup.com/careers/",
+          "platform": "iCIMS",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "Avalere Health",
+          "website": "https://avalerehealth.com/",
+          "careersUrl": "https://avalerehealth.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "AXON Communications",
+          "website": "https://axon-com.com/",
+          "careersUrl": "https://axon-com.com/join-us/",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "AXS Studio",
+          "website": "https://axs3d.com/",
+          "careersUrl": "https://axs3d.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "BGBx",
+          "website": "https://bgbx.com/",
+          "careersUrl": "https://bgbx.com/careers/",
+          "platform": "Greenhouse",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "EVERSANA",
+          "website": "https://www.eversana.com/",
+          "careersUrl": "https://www.eversana.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Inizio",
+          "website": "https://inizio.com/",
+          "careersUrl": "https://inizio.com/join-inizio/",
+          "platform": "Greenhouse",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Innomar Strategies (Cencora)",
+          "website": "https://www.cencora.com/",
+          "careersUrl": "https://myhrabc.wd5.myworkdayjobs.com/Global",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Intrinsik",
+          "website": "https://intrinsik.com/",
+          "careersUrl": "https://intrinsik.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Klick",
+          "website": "https://www.klick.com/",
+          "careersUrl": "https://careers.klick.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Lumanity",
+          "website": "https://lumanity.com/",
+          "careersUrl": "https://lumanity.com/careers/current-openings/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Medlior Health Outcomes Research",
+          "website": "https://www.medlior.com/",
+          "careersUrl": "https://www.medlior.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "MEDUCOM Health",
+          "website": "https://www.meducom.ca/",
+          "careersUrl": "https://www.meducom.ca/careers",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "MORSE Consulting",
+          "website": "https://morseconsulting.ca/",
+          "careersUrl": "https://morseconsulting.ca/careers/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Ogilvy Health Canada",
+          "website": "https://www.ogilvy.com/",
+          "careersUrl": "https://job-boards.greenhouse.io/ogilvyhealthcanada",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Omnicom Health",
+          "website": "https://www.omc.com/capabilities/capability-health/",
+          "careersUrl": "https://job-boards.greenhouse.io/omnicomhealth",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "OPEN Health",
+          "website": "https://www.openhealthgroup.com/",
+          "careersUrl": "https://www.openhealthgroup.com/careers/",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Precision AQ",
+          "website": "https://www.precisionaq.com/",
+          "careersUrl": "https://job-boards.greenhouse.io/precisionaq",
+          "platform": "Greenhouse",
+          "locations": "Canada-eligible remote",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Prime Global",
+          "website": "https://primeglobalpeople.com/",
+          "careersUrl": "https://apply.workable.com/primeglobalpeople-join-us/",
+          "platform": "Workable",
+          "locations": "Canada-eligible remote",
+          "notes": "Workable: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Publicis Health Canada",
+          "website": "https://www.publicishealth.com/",
+          "careersUrl": "https://careers.publicisgroupe.com/publicishealth/jobs",
+          "platform": "iCIMS",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "Reverba Global",
+          "website": "https://reverba.com/",
+          "careersUrl": "https://reverba.com/careers/",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "TANK Worldwide",
+          "website": "https://tankww.com/en/",
+          "careersUrl": "https://job-boards.greenhouse.io/tankww",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "ZS",
+          "website": "https://www.zs.com/",
+          "careersUrl": "https://jobs.zs.com/jobs?country=Canada&page=1",
+          "platform": "iCIMS",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        }
+      ]
+    },
+    {
+      "id": "consulting-research",
+      "sector": "Consulting & market research",
+      "description": "Management consulting firms and market, opinion and analytics research firms.",
+      "typicalRoles": [
+        "Analyst / associate consultant",
+        "Research analyst",
+        "Project director",
+        "Data analyst",
+        "Strategy & operations associate"
+      ],
+      "employers": [
+        {
+          "name": "Accenture",
+          "website": "https://www.accenture.com/",
+          "careersUrl": "https://www.accenture.com/ca-en/careers/jobsearch",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "BrandSpark International",
+          "website": "https://brandspark.com/",
+          "careersUrl": "https://brandspark.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Deloitte",
+          "website": "https://www.deloitte.com/",
+          "careersUrl": "https://careers.deloitte.ca/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Environics Analytics",
+          "website": "https://environicsanalytics.com/",
+          "careersUrl": "https://environicsanalytics.com/about/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Environics Research",
+          "website": "https://environics.ca/",
+          "careersUrl": "https://environics.ca/about/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Escalent",
+          "website": "https://escalent.co/",
+          "careersUrl": "https://escalent.co/careers-and-culture/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "EY",
+          "website": "https://www.ey.com/en_ca",
+          "careersUrl": "https://careers.ey.com/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Hotspex",
+          "website": "https://www.hotspex.com/",
+          "careersUrl": "https://www.hotspex.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Innovative Research Group",
+          "website": "https://innovativeresearch.ca/",
+          "careersUrl": "https://innovativeresearch.ca/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Ipsos Canada",
+          "website": "https://www.ipsos.com/en-ca",
+          "careersUrl": "https://www.ipsos.com/en-ca/careers",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "KPMG",
+          "website": "https://kpmg.com/ca/en.html",
+          "careersUrl": "https://careers.kpmg.ca/professionals",
+          "platform": "iCIMS",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "Leger",
+          "website": "https://leger360.com/",
+          "careersUrl": "https://leger360.com/careers/",
+          "platform": "SmartRecruiters",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SmartRecruiters job site. SmartRecruiters: you can apply as a guest; an account lets you reuse your profile."
+        },
+        {
+          "name": "Nanos Research",
+          "website": "https://nanos.co/",
+          "careersUrl": "https://nanos.co/",
+          "platform": "Company site",
+          "locations": "Canada",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Pollara Strategic Insights",
+          "website": "https://www.pollara.com/",
+          "careersUrl": "https://www.pollara.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "PwC",
+          "website": "https://www.pwc.com/ca",
+          "careersUrl": "https://jobs-ca.pwc.com/ca/en/search-results",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        }
+      ]
+    },
+    {
+      "id": "ai-tech",
+      "sector": "AI & large technology companies",
+      "description": "AI labs, cloud, data platforms and large enterprise technology companies.",
+      "typicalRoles": [
+        "Solutions engineer",
+        "Customer success manager",
+        "Technical account manager",
+        "Sales development representative",
+        "Product manager",
+        "Data analyst"
+      ],
+      "employers": [
+        {
+          "name": "Adobe",
+          "website": "https://www.adobe.com/",
+          "careersUrl": "https://careers.adobe.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Amazon and AWS",
+          "website": "https://www.amazon.com/",
+          "careersUrl": "https://www.amazon.jobs/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Anthropic",
+          "website": "https://www.anthropic.com/",
+          "careersUrl": "https://www.anthropic.com/careers",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Cisco",
+          "website": "https://www.cisco.com/",
+          "careersUrl": "https://careers.cisco.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Cloudflare",
+          "website": "https://www.cloudflare.com/",
+          "careersUrl": "https://www.cloudflare.com/careers/jobs/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Cohere",
+          "website": "https://cohere.com/",
+          "careersUrl": "https://cohere.com/careers",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Databricks",
+          "website": "https://www.databricks.com/",
+          "careersUrl": "https://www.databricks.com/company/careers/open-positions",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Datadog",
+          "website": "https://www.datadoghq.com/",
+          "careersUrl": "https://careers.datadoghq.com/",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Dell Technologies",
+          "website": "https://www.dell.com/",
+          "careersUrl": "https://jobs.dell.com/",
+          "platform": "Oracle Recruiting",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Oracle Recruiting job site. Oracle Recruiting: you usually sign in for each employer with your email and a one-time code."
+        },
+        {
+          "name": "Elastic",
+          "website": "https://www.elastic.co/",
+          "careersUrl": "https://jobs.elastic.co/jobs/country/canada",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Google",
+          "website": "https://about.google/",
+          "careersUrl": "https://www.google.com/about/careers/applications/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "HP",
+          "website": "https://www.hp.com/",
+          "careersUrl": "https://jobs.hp.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "IBM",
+          "website": "https://www.ibm.com/",
+          "careersUrl": "https://www.ibm.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Intel",
+          "website": "https://www.intel.com/",
+          "careersUrl": "https://intel.wd1.myworkdayjobs.com/en-US/External",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Microsoft",
+          "website": "https://www.microsoft.com/",
+          "careersUrl": "https://careers.microsoft.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "MongoDB",
+          "website": "https://www.mongodb.com/",
+          "careersUrl": "https://www.mongodb.com/company/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "NVIDIA",
+          "website": "https://www.nvidia.com/",
+          "careersUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "OpenAI",
+          "website": "https://openai.com/",
+          "careersUrl": "https://openai.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "OpenText",
+          "website": "https://www.opentext.com/",
+          "careersUrl": "https://careers.opentext.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Oracle",
+          "website": "https://www.oracle.com/",
+          "careersUrl": "https://careers.oracle.com/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Salesforce",
+          "website": "https://www.salesforce.com/",
+          "careersUrl": "https://careers.salesforce.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "ServiceNow",
+          "website": "https://www.servicenow.com/",
+          "careersUrl": "https://careers.servicenow.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Snowflake",
+          "website": "https://www.snowflake.com/",
+          "careersUrl": "https://careers.snowflake.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Softchoice",
+          "website": "https://www.softchoice.com/",
+          "careersUrl": "https://careers.softchoice.com/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Thomson Reuters",
+          "website": "https://www.thomsonreuters.com/",
+          "careersUrl": "https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Workday",
+          "website": "https://www.workday.com/",
+          "careersUrl": "https://www.workday.com/en-ca/company/careers/overview.html",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        }
+      ]
+    },
+    {
+      "id": "software-saas",
+      "sector": "Software & SaaS companies",
+      "description": "Business software companies with Canadian offices or Canada-eligible remote roles.",
+      "typicalRoles": [
+        "Sales development / business development representative",
+        "Account executive",
+        "Customer success manager",
+        "Solutions consultant",
+        "Product manager",
+        "Operations analyst"
+      ],
+      "employers": [
+        {
+          "name": "1Password",
+          "website": "https://1password.com/",
+          "careersUrl": "https://1password.com/careers",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Achievers",
+          "website": "https://www.achievers.com/",
+          "careersUrl": "https://www.achievers.com/company/careers/",
+          "platform": "Lever",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Lever job site. Lever: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Ada",
+          "website": "https://www.ada.cx/",
+          "careersUrl": "https://www.ada.cx/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "ADP",
+          "website": "https://www.adp.ca/",
+          "careersUrl": "https://jobs.adp.com/locations/canada/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Airtable",
+          "website": "https://www.airtable.com/",
+          "careersUrl": "https://www.airtable.com/careers",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Amplitude",
+          "website": "https://amplitude.com/",
+          "careersUrl": "https://amplitude.com/careers",
+          "platform": "Ashby",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "ApplyBoard",
+          "website": "https://www.applyboard.com/",
+          "careersUrl": "https://www.applyboard.com/careers/",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Ashby",
+          "website": "https://www.ashbyhq.com/",
+          "careersUrl": "https://www.ashbyhq.com/careers",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Clio",
+          "website": "https://www.clio.com/",
+          "careersUrl": "https://www.clio.com/ca/about/careers/toronto/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Coveo",
+          "website": "https://www.coveo.com/",
+          "careersUrl": "https://www.coveo.com/en/company/careers",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "D2L",
+          "website": "https://www.d2l.com/",
+          "careersUrl": "https://www.d2l.com/careers/jobs/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Deel",
+          "website": "https://www.deel.com/",
+          "careersUrl": "https://jobs.deel.com/",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Docebo",
+          "website": "https://www.docebo.com/",
+          "careersUrl": "https://www.docebo.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Docusign",
+          "website": "https://www.docusign.com/",
+          "careersUrl": "https://careers.docusign.com/careers-home",
+          "platform": "iCIMS",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's iCIMS job site. iCIMS: usually asks you to create an account for this employer; save the login."
+        },
+        {
+          "name": "Drata",
+          "website": "https://drata.com/",
+          "careersUrl": "https://drata.com/about/careers",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Employment Hero (Humi)",
+          "website": "https://employmenthero.com/en-ca/",
+          "careersUrl": "https://employmenthero.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Figma",
+          "website": "https://www.figma.com/",
+          "careersUrl": "https://www.figma.com/careers/",
+          "platform": "Greenhouse",
+          "locations": "Canada-eligible remote",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Geotab",
+          "website": "https://www.geotab.com/",
+          "careersUrl": "https://careers.geotab.com/jobs?department=All&location=CA&page=1&role=All",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "GitLab",
+          "website": "https://about.gitlab.com/",
+          "careersUrl": "https://job-boards.greenhouse.io/gitlab",
+          "platform": "Greenhouse",
+          "locations": "Canada-eligible remote",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Gorgias",
+          "website": "https://www.gorgias.com/",
+          "careersUrl": "https://www.gorgias.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Harvey",
+          "website": "https://www.harvey.ai/",
+          "careersUrl": "https://www.harvey.ai/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Hiya",
+          "website": "https://www.hiya.com/",
+          "careersUrl": "https://jobs.ashbyhq.com/hiya",
+          "platform": "Ashby",
+          "locations": "Canada-eligible remote",
+          "notes": "Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Hootsuite",
+          "website": "https://www.hootsuite.com/",
+          "careersUrl": "https://careers.hootsuite.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "HubSpot",
+          "website": "https://www.hubspot.com/",
+          "careersUrl": "https://www.hubspot.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Intelex",
+          "website": "https://www.intelex.com/",
+          "careersUrl": "https://www.intelex.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Jobber",
+          "website": "https://www.getjobber.com/",
+          "careersUrl": "https://www.getjobber.com/about/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Knak",
+          "website": "https://knak.com/",
+          "careersUrl": "https://knak.com/careers/",
+          "platform": "Greenhouse",
+          "locations": "Canada-eligible remote",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "LaunchDarkly",
+          "website": "https://launchdarkly.com/",
+          "careersUrl": "https://launchdarkly.com/careers/",
+          "platform": "Greenhouse",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "MaintainX",
+          "website": "https://www.getmaintainx.com/",
+          "careersUrl": "https://webflow.getmaintainx.com/jobs",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Motive",
+          "website": "https://gomotive.com/",
+          "careersUrl": "https://gomotive.com/company/careers/",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Notion",
+          "website": "https://www.notion.com/",
+          "careersUrl": "https://www.notion.com/careers",
+          "platform": "Ashby",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Okta",
+          "website": "https://www.okta.com/",
+          "careersUrl": "https://www.okta.com/company/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Owner.com",
+          "website": "https://www.owner.com/",
+          "careersUrl": "https://www.owner.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "PagerDuty",
+          "website": "https://www.pagerduty.com/",
+          "careersUrl": "https://careers.pagerduty.com/jobs/search",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Remote",
+          "website": "https://remote.com/",
+          "careersUrl": "https://remote.com/openings",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Resolver",
+          "website": "https://www.resolver.com/",
+          "careersUrl": "https://www.resolver.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Retool",
+          "website": "https://retool.com/",
+          "careersUrl": "https://retool.com/careers",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Rippling",
+          "website": "https://www.rippling.com/",
+          "careersUrl": "https://www.rippling.com/en-CA/careers",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Samsara",
+          "website": "https://www.samsara.com/",
+          "careersUrl": "https://www.samsara.com/company/careers",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Sentry",
+          "website": "https://sentry.io/",
+          "careersUrl": "https://sentry.io/careers/",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "ServiceTitan",
+          "website": "https://www.servicetitan.com/",
+          "careersUrl": "https://servicetitan.wd1.myworkdayjobs.com/ServiceTitan",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "SOCi",
+          "website": "https://www.soci.ai/",
+          "careersUrl": "https://job-boards.greenhouse.io/soci",
+          "platform": "Greenhouse",
+          "locations": "Canada",
+          "notes": "Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "StackAdapt",
+          "website": "https://www.stackadapt.com/",
+          "careersUrl": "https://www.stackadapt.com/careers",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Thinkific",
+          "website": "https://www.thinkific.com/",
+          "careersUrl": "https://www.thinkific.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Top Hat",
+          "website": "https://tophat.com/",
+          "careersUrl": "https://tophat.com/company/work-with-us/",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Twilio",
+          "website": "https://www.twilio.com/",
+          "careersUrl": "https://www.twilio.com/en-us/careers",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Unbounce",
+          "website": "https://unbounce.com/",
+          "careersUrl": "https://unbounce.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Vanta",
+          "website": "https://www.vanta.com/",
+          "careersUrl": "https://www.vanta.com/company/careers",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "Vidyard",
+          "website": "https://www.vidyard.com/",
+          "careersUrl": "https://www.vidyard.com/careers/",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Zapier",
+          "website": "https://zapier.com/",
+          "careersUrl": "https://zapier.com/jobs",
+          "platform": "Ashby",
+          "locations": "Canada-eligible remote",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "sector": "Banks, fintech & commerce",
+      "description": "Banks, insurers, payments and fintech companies, plus commerce and retail technology.",
+      "typicalRoles": [
+        "Data / business analyst",
+        "Product manager",
+        "Strategy & operations associate",
+        "Customer success manager",
+        "Sales development representative"
+      ],
+      "employers": [
+        {
+          "name": "Airwallex",
+          "website": "https://www.airwallex.com/",
+          "careersUrl": "https://careers.airwallex.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "American Express",
+          "website": "https://www.americanexpress.com/",
+          "careersUrl": "https://careers.americanexpress.com/en/sites/CX_1/jobs",
+          "platform": "Oracle Recruiting",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Oracle Recruiting job site. Oracle Recruiting: you usually sign in for each employer with your email and a one-time code."
+        },
+        {
+          "name": "Bank of America",
+          "website": "https://www.bankofamerica.com/",
+          "careersUrl": "https://careers.bankofamerica.com/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Block",
+          "website": "https://block.xyz/",
+          "careersUrl": "https://block.xyz/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "BMO",
+          "website": "https://www.bmo.com/",
+          "careersUrl": "https://jobs.bmo.com/global/en/search-results",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Borrowell",
+          "website": "https://borrowell.com/",
+          "careersUrl": "https://borrowell.com/careers",
+          "platform": "Workable",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workable job site. Workable: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Brex",
+          "website": "https://www.brex.com/",
+          "careersUrl": "https://www.brex.com/careers",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        },
+        {
+          "name": "CapIntel",
+          "website": "https://capintel.com/",
+          "careersUrl": "https://capintel.com/careers",
+          "platform": "Greenhouse",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Capital One",
+          "website": "https://www.capitalone.ca/",
+          "careersUrl": "https://www.capitalonecareers.ca/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "CIBC",
+          "website": "https://www.cibc.com/",
+          "careersUrl": "https://cibc.wd3.myworkdayjobs.com/search",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Citi",
+          "website": "https://www.citigroup.com/",
+          "careersUrl": "https://jobs.citi.com/location/toronto-jobs/7867/6251999-6093943-6167865/4",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Clearco",
+          "website": "https://www.clear.co/",
+          "careersUrl": "https://www.clear.co/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Clutch",
+          "website": "https://www.clutch.ca/",
+          "careersUrl": "https://www.clutch.ca/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Fiserv",
+          "website": "https://www.fiserv.com/",
+          "careersUrl": "https://careers.fiserv.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Float Financial",
+          "website": "https://floatfinancial.com/",
+          "careersUrl": "https://floatfinancial.com/careers",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "FreshBooks",
+          "website": "https://www.freshbooks.com/",
+          "careersUrl": "https://www.freshbooks.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Intuit",
+          "website": "https://www.intuit.com/",
+          "careersUrl": "https://jobs.intuit.com/location/toronto-jobs/27595/6251999-6093943-6167865/4",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "JPMorgan Chase",
+          "website": "https://www.jpmorganchase.com/",
+          "careersUrl": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs",
+          "platform": "Oracle Recruiting",
+          "locations": "Toronto/GTA",
+          "notes": "Oracle Recruiting: you usually sign in for each employer with your email and a one-time code."
+        },
+        {
+          "name": "KOHO",
+          "website": "https://www.koho.ca/",
+          "careersUrl": "https://www.koho.ca/careers/",
+          "platform": "Ashby",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Lightspeed Commerce",
+          "website": "https://www.lightspeedhq.com/",
+          "careersUrl": "https://www.lightspeedhq.com/careers/openings/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Loop Financial",
+          "website": "https://bankonloop.com/",
+          "careersUrl": "https://ats.rippling.com/en-CA/loop-careers/jobs",
+          "platform": "Rippling",
+          "locations": "Toronto/GTA",
+          "notes": "Rippling: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Manulife",
+          "website": "https://www.manulife.com/",
+          "careersUrl": "https://manulife.wd3.myworkdayjobs.com/MFCJH_Jobs",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Mastercard",
+          "website": "https://www.mastercard.com/",
+          "careersUrl": "https://careers.mastercard.com/us/en/toronto-canada/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Mercury",
+          "website": "https://mercury.com/",
+          "careersUrl": "https://mercury.com/jobs",
+          "platform": "Greenhouse",
+          "locations": "Check each posting for Canadian locations",
+          "notes": "This careers page hands you off to the employer's Greenhouse job site. Greenhouse: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Morgan Stanley",
+          "website": "https://www.morganstanley.com/",
+          "careersUrl": "https://ms.wd5.myworkdayjobs.com/External",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Neo Financial",
+          "website": "https://www.neofinancial.com/",
+          "careersUrl": "https://www.neofinancial.com/company/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "PayPal",
+          "website": "https://www.paypal.com/",
+          "careersUrl": "https://paypal.wd1.myworkdayjobs.com/jobs",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Prophix",
+          "website": "https://www.prophix.com/",
+          "careersUrl": "https://www.prophix.com/careers/",
+          "platform": "Workable",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workable job site. Workable: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Ramp",
+          "website": "https://ramp.com/",
+          "careersUrl": "https://ramp.com/careers",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "RBC",
+          "website": "https://www.rbc.com/",
+          "careersUrl": "https://jobs.rbc.com/ca/en/search-results",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Scotiabank",
+          "website": "https://www.scotiabank.com/",
+          "careersUrl": "https://jobs.scotiabank.com/",
+          "platform": "SuccessFactors",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Shopify",
+          "website": "https://www.shopify.com/",
+          "careersUrl": "https://www.shopify.com/careers",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Stripe",
+          "website": "https://stripe.com/",
+          "careersUrl": "https://stripe.com/careers/search",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Sun Life",
+          "website": "https://www.sunlife.com/",
+          "careersUrl": "https://sunlife.wd3.myworkdayjobs.com/Experienced-Jobs",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "TD",
+          "website": "https://www.td.com/",
+          "careersUrl": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "TouchBistro",
+          "website": "https://www.touchbistro.com/",
+          "careersUrl": "https://www.touchbistro.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Vena",
+          "website": "https://www.venasolutions.com/",
+          "careersUrl": "https://careers.venasolutions.com/",
+          "platform": "Pinpoint",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Pinpoint job site."
+        },
+        {
+          "name": "Versapay",
+          "website": "https://www.versapay.com/",
+          "careersUrl": "https://www.versapay.com/careers",
+          "platform": "Lever",
+          "locations": "Canada-eligible remote",
+          "notes": "This careers page hands you off to the employer's Lever job site. Lever: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Visa",
+          "website": "https://www.visa.com/",
+          "careersUrl": "https://visa.wd5.myworkdayjobs.com/Visa",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Walmart Canada",
+          "website": "https://www.walmartcanada.ca/",
+          "careersUrl": "https://careers.walmart.ca/",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Wave",
+          "website": "https://www.waveapps.com/",
+          "careersUrl": "https://www.waveapps.com/careers",
+          "platform": "Company site",
+          "locations": "Check each posting for Canadian locations"
+        },
+        {
+          "name": "Wealthsimple",
+          "website": "https://www.wealthsimple.com/",
+          "careersUrl": "https://www.wealthsimple.com/en-ca/careers",
+          "platform": "Ashby",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Ashby job site. Ashby: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Xe",
+          "website": "https://www.xe.com/",
+          "careersUrl": "https://careers.xe.com/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        }
+      ]
+    },
+    {
+      "id": "public-sector",
+      "sector": "Government & public agencies",
+      "description": "Federal and provincial agencies and public health organizations.",
+      "typicalRoles": [
+        "Research officer",
+        "Policy analyst",
+        "Epidemiologist / data analyst",
+        "Program coordinator",
+        "Scientific evaluator"
+      ],
+      "employers": [
+        {
+          "name": "National Research Council Canada",
+          "website": "https://nrc.canada.ca/",
+          "careersUrl": "https://nrc.canada.ca/en/corporate/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Ontario Health",
+          "website": "https://www.ontariohealth.ca/",
+          "careersUrl": "https://www.ontariohealth.ca/about/work/careers",
+          "platform": "Workday",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        },
+        {
+          "name": "Public Health Ontario",
+          "website": "https://www.publichealthontario.ca/",
+          "careersUrl": "https://www.publichealthontario.ca/en/About/Careers/Current%20Job%20Opportunities",
+          "platform": "Workday",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's Workday job site. Workday: usually asks you to create a candidate account for this employer (separate from other employers); save the login."
+        }
+      ]
+    },
+    {
+      "id": "nonprofits-funders",
+      "sector": "Non-profits, charities & research funders",
+      "description": "Health charities, research funders, innovation hubs and professional associations.",
+      "typicalRoles": [
+        "Research grants / programs officer",
+        "Research development officer",
+        "Knowledge mobilization specialist",
+        "Program manager",
+        "Policy analyst"
+      ],
+      "employers": [
+        {
+          "name": "Arthritis Society Canada",
+          "website": "https://arthritis.ca/",
+          "careersUrl": "https://arthritis.ca/about-us/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Brain Canada Foundation",
+          "website": "https://braincanada.ca/",
+          "careersUrl": "https://braincanada.ca/about/careers",
+          "platform": "Company site",
+          "locations": "Canada"
+        },
+        {
+          "name": "Canadian Blood Services",
+          "website": "https://www.blood.ca/",
+          "careersUrl": "https://careers.blood.ca/",
+          "platform": "SuccessFactors",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's SuccessFactors job site. SuccessFactors: usually asks you to create a candidate account for this employer; save the login."
+        },
+        {
+          "name": "Canadian Cancer Society",
+          "website": "https://cancer.ca/",
+          "careersUrl": "https://cancer.ca/en/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "CCRM",
+          "website": "https://www.ccrm.ca/",
+          "careersUrl": "https://www.ccrm.ca/ccrm-careers-jobvite/",
+          "platform": "Jobvite",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's Jobvite job site. Jobvite: usually no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "CIFAR",
+          "website": "https://cifar.ca/",
+          "careersUrl": "https://cifar.ca/careers/",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Daily Bread Food Bank",
+          "website": "https://www.dailybread.ca/",
+          "careersUrl": "https://dailybreadfoodbank.applytojob.com/",
+          "platform": "JazzHR",
+          "locations": "Toronto/GTA",
+          "notes": "JazzHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Diabetes Canada",
+          "website": "https://www.diabetes.ca/",
+          "careersUrl": "https://www.diabetes.ca/support-us/volunteer-careers/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Genome Canada",
+          "website": "https://genomecanada.ca/",
+          "careersUrl": "https://genomecanada.ca/about/work-with-us/",
+          "platform": "BambooHR",
+          "locations": "Canada",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Heart & Stroke",
+          "website": "https://www.heartandstroke.ca/",
+          "careersUrl": "https://www.heartandstroke.ca/what-we-do/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "MaRS Discovery District",
+          "website": "https://www.marsdd.com/",
+          "careersUrl": "https://www.marsdd.com/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Mitacs",
+          "website": "https://www.mitacs.ca/",
+          "careersUrl": "https://www.mitacs.ca/careers/",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "MS Canada",
+          "website": "https://mscanada.ca/",
+          "careersUrl": "https://mscanada.ca/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "OBIO",
+          "website": "https://www.obio.ca/",
+          "careersUrl": "https://www.obio.ca/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA",
+          "notes": "No separate careers page found; check the website and the company's LinkedIn page for openings."
+        },
+        {
+          "name": "Ontario Brain Institute",
+          "website": "https://braininstitute.ca/",
+          "careersUrl": "https://braininstitute.ca/about-obi/careers",
+          "platform": "BambooHR",
+          "locations": "Toronto/GTA",
+          "notes": "This careers page hands you off to the employer's BambooHR job site. BambooHR: no account needed; you apply to each posting with a form."
+        },
+        {
+          "name": "Ontario Genomics",
+          "website": "https://www.ontariogenomics.ca/",
+          "careersUrl": "https://www.ontariogenomics.ca/about-us/careers/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Ontario Hospital Association",
+          "website": "https://www.oha.com/",
+          "careersUrl": "https://www.oha.com/careers",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "Ontario Medical Association",
+          "website": "https://www.oma.org/",
+          "careersUrl": "https://www.oma.org/about-the-oma/careers/job-postings/",
+          "platform": "Company site",
+          "locations": "Toronto/GTA"
+        },
+        {
+          "name": "OpenAlex",
+          "website": "https://openalex.org/",
+          "careersUrl": "https://openalex.org/jobs",
+          "platform": "Company site",
+          "locations": "Canada-eligible remote"
+        }
+      ]
+    }
+  ]
+}

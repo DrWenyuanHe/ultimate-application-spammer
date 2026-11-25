@@ -1,0 +1,17 @@
+{
+  "name": "ultimate-application-spammer",
+  "version": "0.1.0",
+  "description": "A local, private job-application workspace you run through Codex (ChatGPT app) or Claude Code (Claude Desktop). Everything stays on your computer.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=24" },
+  "repository": { "type": "git", "url": "https://github.com/DrWenyuanHe/ultimate-application-spammer.git" },
+  "scripts": {
+    "start": "node app/cli.mjs start",
+    "setup": "node app/cli.mjs setup",
+    "doctor": "node app/cli.mjs doctor",
+    "test": "node --test \"app/tests/**/*.test.mjs\"",
+    "check": "node app/tests/check-repo.mjs && node --test \"app/tests/**/*.test.mjs\""
+  }
+}

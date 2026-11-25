@@ -1,0 +1,31 @@
+{
+  "offset": 0,
+  "limit": 100,
+  "totalFound": 2,
+  "content": [
+    {
+      "id": "744000000000001",
+      "name": "Bioinformatics Scientist",
+      "uuid": "00000000-aaaa-bbbb-cccc-000000000001",
+      "refNumber": "REF1001T",
+      "company": { "identifier": "TailspinHealth", "name": "Tailspin Health" },
+      "releasedDate": "2026-11-24T15:06:11.664Z",
+      "location": { "city": "Halifax", "region": "NS", "country": "ca", "remote": false, "hybrid": true, "fullLocation": "Halifax, NS, Canada" },
+      "department": { "id": "1", "label": "Research & Development" },
+      "function": { "id": "research", "label": "Research" },
+      "typeOfEmployment": { "id": "permanent", "label": "Full-time" },
+      "ref": "https://api.smartrecruiters.com/v1/companies/TailspinHealth/postings/744000000000001"
+    },
+    {
+      "id": "744000000000002",
+      "name": "Customer Support Agent",
+      "uuid": "00000000-aaaa-bbbb-cccc-000000000002",
+      "company": { "identifier": "TailspinHealth", "name": "Tailspin Health" },
+      "releasedDate": "2026-11-23T15:06:11.664Z",
+      "location": { "city": "Winnipeg", "region": "MB", "country": "ca", "remote": true, "fullLocation": "Winnipeg, MB, Canada" },
+      "department": { "id": "2", "label": "Support" },
+      "typeOfEmployment": { "id": "temporary", "label": "Temporary" },
+      "ref": "https://api.smartrecruiters.com/v1/companies/TailspinHealth/postings/744000000000002"
+    }
+  ]
+}

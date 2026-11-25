@@ -1,0 +1,15 @@
+{
+  "description": "Every visual setting for generated resumes lives here. Change a value, then ask your assistant to refresh the templates (operation docs.refresh-templates) to refresh the Word masters in '3 Templates'. Values come from the two-page research-program resume style: Times New Roman, centred name, grey rules under headings, right-aligned dates.",
+  "page": { "size": "Letter", "marginsInches": { "top": 0.4, "right": 0.55, "bottom": 0.35, "left": 0.55 } },
+  "font": "Times New Roman",
+  "color": "000000",
+  "lineSpacing": 1.05,
+  "name": { "sizePt": 18, "bold": true, "uppercase": true, "align": "center", "afterPt": 3 },
+  "contact": { "sizePt": 10.5, "align": "center", "separator": "  |  ", "afterPt": 8, "rule": { "widthPt": 2.5, "color": "1D1D1F", "gapPt": 6 } },
+  "summary": { "sizePt": 11, "italic": false, "beforePt": 6, "afterPt": 4, "lineSpacing": 1.1, "rule": { "widthPt": 0.5, "color": "E5E5E7", "gapPt": 4 } },
+  "heading": { "sizePt": 11, "bold": true, "uppercase": true, "beforePt": 8, "afterPt": 3, "rule": { "widthPt": 1.5, "color": "D1D1D6", "gapPt": 2 } },
+  "role": { "sizePt": 11, "beforePt": 2, "afterPt": 2, "titleBold": true, "organizationItalic": true, "separator": "  |  ", "dateTabInches": 7.4 },
+  "intro": { "sizePt": 11, "beforePt": 3, "afterPt": 3 },
+  "paragraph": { "sizePt": 11, "beforePt": 3, "afterPt": 3 },
+  "bullet": { "sizePt": 11, "char": "•", "leftInches": 0.4, "hangingInches": 0.15, "beforePt": 1, "afterPt": 1, "lastAfterPt": 4, "lastRule": { "widthPt": 0.5, "color": "EBEBED", "gapPt": 4 } }
+}

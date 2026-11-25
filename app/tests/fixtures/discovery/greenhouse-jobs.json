@@ -1,0 +1,40 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/northwindlabs/jobs/4001001",
+      "data_compliance": [{ "type": "gdpr", "requires_consent": false }],
+      "internal_job_id": 9001,
+      "location": { "name": "Toronto, Ontario, Canada" },
+      "metadata": [],
+      "id": 4001001,
+      "updated_at": "2026-11-20T10:00:00-05:00",
+      "requisition_id": "NW-101",
+      "title": "Research Scientist, Protein Design",
+      "company_name": "Northwind Labs",
+      "first_published": "2026-11-18T09:30:00-05:00",
+      "language": "en"
+    },
+    {
+      "absolute_url": "https://northwindlabs.example/careers?gh_jid=4001002",
+      "internal_job_id": 9002,
+      "location": { "name": "Remote - Canada" },
+      "id": 4001002,
+      "updated_at": "2026-11-21T10:00:00-05:00",
+      "requisition_id": null,
+      "title": "Senior Data Engineer",
+      "company_name": "Northwind Labs",
+      "first_published": null
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/northwindlabs/jobs/4001003",
+      "location": { "name": "Boston, MA" },
+      "id": 4001003,
+      "updated_at": "2026-11-22T10:00:00-05:00",
+      "requisition_id": "NW-103",
+      "title": "Office Coordinator",
+      "company_name": "Northwind Labs",
+      "first_published": "2026-11-22T10:00:00-05:00"
+    }
+  ],
+  "meta": { "total": 3 }
+}
