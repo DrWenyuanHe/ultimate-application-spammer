@@ -138,6 +138,26 @@ test('PDF export (only when LibreOffice or Word is installed)', { timeout: 24000
   assert.ok(fs.existsSync(path.join(home, 'app', 'data', 'render')), 'work files stay in the isolated data folder')
 })
 
+test('PDF export works from a workspace with a long folder path (LibreOffice only)', { timeout: 240000 }, (t) => {
+  if (process.env.UAS_TEST_SKIP_PDF) return t.skip('UAS_TEST_SKIP_PDF is set')
+  const converter = pdfConverter()
+  if (converter?.kind !== 'libreoffice') return t.skip('LibreOffice not installed')
+  // LibreOffice's nested settings folder used to live under the data folder and pass Windows' 260-character limit.
+  const deep = path.join(home, 'OneDrive - Example Organization', 'Documents', 'Job search 2026', 'Ultimate Application Spammer workspace', 'app', 'data')
+  const docx = path.join(home, 'pdf-long', 'Example.docx')
+  fs.mkdirSync(path.dirname(docx), { recursive: true })
+  fs.writeFileSync(docx, buildResume(demo.exampleResume))
+  const before = process.env.UAS_DATA
+  process.env.UAS_DATA = deep
+  try {
+    const pdf = exportPdf(docx, converter)
+    assert.equal(fs.readFileSync(pdf).subarray(0, 5).toString(), '%PDF-')
+  } finally {
+    if (before === undefined) delete process.env.UAS_DATA
+    else process.env.UAS_DATA = before
+  }
+})
+
 test('characters XML forbids are dropped instead of producing a document Word cannot open', () => {
   const buf = buildResume({ name: 'Jordan\u0001 Example\u0008', summary: 'Tab\tand form\u000Cfeed \uFFFF end' }, { ...loadFormat('resume'), name: { ...resumeFormat.name, uppercase: false } })
   const xml = documentXml(buf)

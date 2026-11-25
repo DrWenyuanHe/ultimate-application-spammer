@@ -1,6 +1,6 @@
 {
   "name": "ultimate-application-spammer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A local, private job-application workspace you run through Codex (ChatGPT app) or Claude Code (Claude Desktop). Everything stays on your computer.",
   "license": "MIT",
   "type": "module",

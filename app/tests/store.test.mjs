@@ -559,6 +559,7 @@ describe('brief and submissions', () => {
     const after = s.application(app.id)
     assert.equal(after.stage, 'Applied')
     assert.equal(after.appliedAt, '2026-11-20')
+    assert.equal(after.nextAction, 'Wait to hear back; follow up if no reply', 'the pre-submission next step is replaced')
     assert.equal(s.brief(app.id).previousSubmissions.length, 1)
 
     // editing the original afterwards does not change the filed copy

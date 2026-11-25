@@ -73,7 +73,7 @@ node app/cli.mjs op run submissions.record --file app/data/tmp/submission-JOB_ID
 This:
 - copies each file, unchanged, into a new folder named after the date and job, such as `1 Applications/2026-11-25 Cedar Health Network - Research Coordinator/` (or `2026-11 …` when only the month is known), with its SHA-256 fingerprint;
 - writes `submission.json` and a readable `What I submitted.md` in that folder;
-- moves the job to `Applied` (it never moves a later stage backwards), which the dashboard then shows.
+- moves the job to `Applied` (it never moves a later stage backwards), which the dashboard then shows, and sets its next step to "Wait to hear back; follow up if no reply". Offer to set a follow-up date (section 4).
 
 Tell the person where the folder is and list any gaps.
 

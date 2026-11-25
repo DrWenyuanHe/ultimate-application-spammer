@@ -1,6 +1,7 @@
 // Builds resume and cover-letter .docx files from JSON content plus a format file.
 // All visual settings come from app/templates/*-format.json (or a user copy in 4 Templates).
 import fs from 'node:fs'
+import os from 'node:os'
 import path from 'node:path'
 import { spawnSync } from 'node:child_process'
 import { randomUUID } from 'node:crypto'
@@ -237,13 +238,20 @@ export function exportPdf(docxFile, converter = pdfConverter()) {
   const pdf = path.join(work, 'document.pdf')
   let result
   if (converter.kind === 'libreoffice') {
-    const profile = pathToFileURL(path.join(work, 'profile')).href
-    result = spawnSync(converter.command, [`-env:UserInstallation=${profile}`, '--headless', '--convert-to', 'pdf', '--outdir', work, staged], { encoding: 'utf8', timeout: 180000, windowsHide: true })
+    // LibreOffice's settings folder is deeply nested; inside a long workspace path it passes the
+    // Windows 260-character limit and LibreOffice exits silently. Keep it in a short temp folder,
+    // shared between runs; if that one is busy or damaged, try once more with a fresh one.
+    const convert = (profileDir) => spawnSync(converter.command, [`-env:UserInstallation=${pathToFileURL(profileDir).href}`, '--headless', '--convert-to', 'pdf', '--outdir', work, staged], { encoding: 'utf8', timeout: 180000, windowsHide: true })
+    result = convert(path.join(os.tmpdir(), 'uas-libreoffice'))
+    if (!fs.existsSync(pdf)) result = convert(path.join(os.tmpdir(), `uas-libreoffice-${randomUUID().slice(0, 8)}`))
   } else {
     const script = `$w = New-Object -ComObject Word.Application; $w.Visible = $false; try { $d = $w.Documents.Open('${staged.replace(/'/g, "''")}', $false, $true); $d.SaveAs2('${pdf.replace(/'/g, "''")}', 17); $d.Close($false) } finally { $w.Quit() }`
     result = spawnSync('powershell.exe', ['-NoProfile', '-Command', script], { encoding: 'utf8', timeout: 180000, windowsHide: true })
   }
-  if (!fs.existsSync(pdf)) throw new Error(`PDF export failed: ${(result.stderr || result.stdout || '').trim().slice(0, 400)}`)
+  if (!fs.existsSync(pdf)) {
+    const said = (result.stderr || result.stdout || result.error?.message || '').trim().slice(0, 400)
+    throw new Error(`PDF export failed (${converter.kind}, exit code ${result.status ?? result.signal ?? 'unknown'})${said ? `: ${said}` : ''}. The .docx was saved; open it and use Save as PDF.`)
+  }
   const target = uniquePath(path.dirname(source), `${path.basename(source, path.extname(source))}.pdf`)
   fs.copyFileSync(pdf, target, fs.constants.COPYFILE_EXCL)
   return target

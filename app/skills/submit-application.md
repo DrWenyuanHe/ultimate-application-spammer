@@ -34,6 +34,19 @@ Open the employer's application link in the browser available to you (in Claude,
 
 When the site asks for sign-in or a new account, stop and ask the person to do it. Continue when they say they are signed in.
 
+### Notes for each browser
+
+**Claude's built-in browser** (the browser pane in the Claude desktop app; tools named `Claude_Browser`):
+- Open the form with `preview_start` and its `url`; that gives the form its own tab. Read fields with `read_page` or `find`, fill them with `form_input`, and click with `computer`. Read text with `get_page_text` rather than screenshots.
+- Sign-ins made in the pane are kept for later sessions. They belong to the person: never sign out or change account settings.
+- Before asking the person to sign in, attach a file or press anything, call `tabs_context`. If it says the pane is hidden, first ask them to show it (Ctrl+Shift+B on Windows, Cmd+Shift+B on Mac, or the globe icon).
+- **The built-in browser cannot attach files.** When you reach an upload field, tell the person exactly which file to attach (full path from `1 Applications/`), ask them to choose it in the pane, then check with `read_page` that the file name now shows on the form. Record the file the person attached, not the one you expected.
+- Do not use page scripts (`javascript_tool`) to fill or submit forms.
+
+**Claude in Chrome** (the person's own Chrome; tools named `claude-in-chrome`): works the same way, and its `file_upload` tool can attach the approved files itself. Use it when the person asks for Chrome, or when they would rather not attach files by hand.
+
+**Codex:** use its browser tool if the session has one. If it cannot attach files, ask the person to attach them as above.
+
 ## 3. Fill every field
 
 Keep a running list of every field and question exactly as the form words it, the answer you gave, whether it was required, and where the answer came from (`source`):
@@ -66,7 +79,7 @@ Rules while filling:
 
 ## 4. Review page and submit
 
-Stop before the action that sends the application: the Submit button, whether or not the site shows a separate review page. Save a copy of what the final screen shows (page text or a screenshot saved under `app/data/tmp/`).
+Stop before the action that sends the application: the Submit button, whether or not the site shows a separate review page. Save a copy of what the final screen shows: write the `get_page_text` output (or your browser's equivalent) to a new file under `app/data/tmp/`, for example `app/data/tmp/final-page-JOB_ID-1.txt`.
 
 - **review-first:** show the person a short summary: documents attached, every question and answer, anything new they answered today. Ask: "Shall I submit this application to Cedar Health Network now? (yes/no)". Submit only after a clear yes for this job. Any other reply means wait.
 - **auto-submit:** if every question had a saved or approved answer, submit.

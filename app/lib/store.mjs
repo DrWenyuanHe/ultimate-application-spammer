@@ -583,7 +583,8 @@ export class Store {
       const record = this.t.create('submission', { ...manifest, folder: path.relative(folder('applications'), dir) }, { actor, type: 'submitted' })
       const latest = this.application(app.id)
       if (STAGE_RANK[latest.stage] < STAGE_RANK.Applied) {
-        this.t.update('application', app.id, (cur) => ({ ...cur, stage: 'Applied', appliedAt: input.submittedAt }), { actor, type: 'submitted' })
+        // The old next step ("Submit…", "Draft…") is done; leave a sensible one until the agent sets a follow-up date.
+        this.t.update('application', app.id, (cur) => ({ ...cur, stage: 'Applied', appliedAt: input.submittedAt, nextAction: 'Wait to hear back; follow up if no reply' }), { actor, type: 'submitted' })
       }
       return { submission: record, folder: dir }
     })

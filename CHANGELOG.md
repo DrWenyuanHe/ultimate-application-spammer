@@ -2,6 +2,14 @@
 
 Each section is a release. The update prompt shows the section for the new version, so it is written for people using the app, not for developers.
 
+## 0.1.1 — 2026-11-25
+
+Fixes found while testing a full application from start to finish.
+
+- PDF export now works when your workspace sits in a long folder path, such as a folder deep inside OneDrive or Documents. Before, the PDF failed with no explanation.
+- After an application is submitted, the dashboard no longer shows the old "Submit…" step. It shows "Wait to hear back; follow up if no reply" until you set a follow-up date.
+- Clearer steps for submitting through Claude's built-in browser. It cannot attach files, so the assistant asks you to attach the resume and cover letter yourself and checks they are on the form before going on. Claude in Chrome can attach them itself.
+
 ## 0.1.0 — 2026-11-25
 
 The first release.
