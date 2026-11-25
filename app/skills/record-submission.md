@@ -98,4 +98,4 @@ When the person gets an interview:
 1. Check the stage with `jobs.get`. If it is `Applied`, move it to `Interview` with `jobs.update`. Never move a later stage (such as `Offer`) backwards.
 2. Open the folder in `1 Applications/` for this job. Read `What I submitted.md` and the filed documents. These are what was sent; the newest drafts may differ.
 3. Re-open the posting if it is still online, and use the career library (`evidence.list`) for examples.
-4. Prepare likely questions and answers from what was filed and from confirmed evidence only.
+4. Prepare likely questions and answers from what was filed and the career library, using the job's saved `qualificationMap` and stories.

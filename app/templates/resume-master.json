@@ -3,7 +3,7 @@
   "name": "{{YOUR NAME}}",
   "contact": ["{{CITY, REGION}}", "{{PHONE}}", "{{EMAIL}}", "{{LINK (optional)}}"],
   "tagline": "{{Optional italic tagline, e.g. Research development and scientific communications}}",
-  "summary": "{{Two or three sentences written for this role, using only confirmed evidence. Use *italic* or **bold** sparingly.}}",
+  "summary": "{{Two or three sentences written for this role, using facts from the career library. Use *italic* or **bold** sparingly.}}",
   "sections": [
     {
       "heading": "{{Section heading that matches the role, e.g. Research Experience}}",

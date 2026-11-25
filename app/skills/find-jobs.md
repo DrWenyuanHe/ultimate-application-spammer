@@ -58,7 +58,7 @@ A queued search runs once, when an assistant picks it up; nothing repeats on a s
 }
 ```
 
-Every finding becomes a job in `Review` (existing jobs only get their posting details refreshed). So list only shortlisted postings in `findings`, each with the employer's posting link and `checkedAt`. Put rejected and held counts in `summary`. If the claim expired, claim it again.
+Every finding becomes a job in `Review` (existing jobs only get their posting details refreshed). So list only shortlisted postings in `findings`, each with the employer's posting link and `checkedAt`. Put rejected and held counts in `summary`. If the claim expired, claim it again. If a search cannot be finished, put it back with `search.fail` and the reason.
 
 ## 3. Remove what was already handled
 
@@ -78,30 +78,33 @@ Put the candidates in a `screen.preflight` input (you can copy `candidates` from
 node app/cli.mjs op run screen.preflight --file app/data/tmp/preflight-1.json
 ```
 
-Screen only the `eligible` list. The others are:
+Screen only the `eligible` list. An item with `recheck` was held or reopened earlier and is due again; its `previous` decision is shown. The others are:
 - `existing-application`: already saved. Skip it.
-- `already-decided`: screened before. Skip it unless the person asks for a recheck.
+- `already-decided`: screened before. Skip it unless the person asks for a recheck. `criteriaChanged` tells you the earlier decision used other criteria; that alone does not reopen it.
 - `duplicate-in-batch`, `invalid` (no link): skip.
 
-**Same job or new job?** Links that differ only by tracking parts (`utm_source`, `gh_src`, `ref` and similar) are the same posting; preflight handles these. A different requisition number is a new opportunity, even at the same employer with the same title. If the same requisition appears under a different link, treat it as already handled (check `screen.list` and `jobs.list` with `q` set to the employer). If an employer reuses one link for a new requisition, preflight reports it as already saved or decided, and the app cannot yet keep the two apart. Tell the person, and add the new requisition number to the existing job's `notes` with `jobs.update`.
+**Same job or new job?** Links that differ only by tracking parts (`utm_source`, `gh_src`, `ref` and similar) are the same posting; preflight handles these. A different requisition number is a new opportunity, even at the same employer with the same title. If the same requisition appears under a different link, treat it as already handled (check `screen.list` and `jobs.list` with `q` set to the employer). Different links to the same board number also match, and you can pass `aliases` for other links you have confirmed are the same posting. If an employer reuses one link for a new requisition, always include `requisition`: two different requisition numbers are kept apart.
 
 ## 4. Judge each eligible posting
 
 Open every posting on the employer's site. For each one, note:
 
+- The duties and qualifications, word for word, to save as `postingText` on shortlisted jobs. Postings disappear, and the resume is matched against this text.
 - Is it still open? Closing date?
 - Location, work model and employment type as the posting states them. A generic "full-time" label does not say whether it is permanent.
 - Main duties and required qualifications.
-- Fit against the profile and the career library (`evidence.list` with `q`). Name the evidence for each strong match and name the gaps. Evidence still marked `needs-review` is unconfirmed; say so in the reason.
+- Fit against the profile and the career library (`evidence.list` with `q`). Name the evidence for each strong match and name the gaps. Ignore facts marked `disputed` or `outdated`.
+- How the work splits (for example lab and analysis, or travel and desk) when the posting says. Save it as `dutySplit`; if it is unclear and matters to the person, say so instead of guessing from the title.
+- The date the employer says it was posted, if shown (`postedAt`). Never use a search result's date.
 
 Decide:
 - `shortlist`: a real fit worth preparing. This creates a job in `Review` on the dashboard.
 - `reject`: clearly outside what they want or require. Give the reason.
-- `hold`: unclear or needs the person's call (for example a fixed-term contract, or one missing requirement).
+- `hold`: a required qualification or eligibility rule is unmet or not established, or the terms need the person's call. Say exactly which. Add `recheckAfter` (a date) if it is worth looking again later.
 
-Do not reject a role only because a requirement is unconfirmed; hold it and ask. Do not shortlist on the employer's name alone.
+Required qualifications are a gate, not a stretch; preferred ones are not. Do not reject a role only because a requirement is not established; hold it. Do not shortlist on the employer's name alone. For fixed-term or unusual terms, apply the conditions in `employmentPreferences` and record the evidence for each; a generic "full-time" label or a famous employer is not evidence. Collect held questions for the summary instead of stopping for each one.
 
-Rank shortlisted jobs by how well confirmed evidence covers their key requirements. Evidence with complete STAR fields and dated metrics counts for more than a bare job title (`evidence.strength` shows each record's score and what is missing).
+Rank shortlisted jobs by how well the evidence covers their key requirements. Evidence with complete STAR fields and dated metrics counts for more than a bare job title (`evidence.strength` shows each record's score and what is missing).
 
 ## 5. Record every decision
 
@@ -138,7 +141,7 @@ node app/cli.mjs op run screen.record --file app/data/tmp/decisions-1.json
 ```
 
 - Every decision needs `reason` and at least one `evidence` item `{ url, checkedAt }` from the employer.
-- To revisit an earlier decision on purpose, add `"recheckReason": "Posting reopened with a new closing date"`. The earlier decision is kept and marked as replaced.
+- To revisit an earlier decision on purpose, add `"recheckReason": "Posting reopened with a new closing date"`, or make it eligible for a later batch with `screen.reopen` and `{ "id", "reason" }`. The earlier decision is kept and marked as replaced.
 - After recording, add the closing date to each shortlisted job with `jobs.update` (`patch: { "deadline": "2026-12-15" }`).
 
 To add a single job the person gave you, open the employer's posting and use `jobs.add`:
@@ -148,6 +151,29 @@ To add a single job the person gave you, open the employer's posting and use `jo
 ```
 
 Note the field name: screening evidence and search findings use `checkedAt`, but a job uses `lastChecked` (the time you opened the posting). If it is already saved, the error names the existing record.
+
+### Check the links and rank
+
+Before you tell the person a job is open, check the exact link they will click:
+
+```json
+{ "jobIds": ["JOB_ID_1", "JOB_ID_2"] }
+```
+
+```
+node app/cli.mjs op run postings.check --file app/data/tmp/links-1.json
+```
+
+- `verified`: fine. `unavailable`: find the right link on the employer's site, or set `postingStatus` to `unknown` with a note. A dead link alone does not prove the employer closed the job; set `closed` only when the employer says so.
+- `blocked` or `needs-browser-check`: open it in a browser and look for the title, the employer and how to apply. Do not enter anything.
+
+Then save your rating with `jobs.rank`. `A` prioritize, `B` good option, `C` stretch, `Hold` when a required qualification or eligibility is unmet or not established. Rank 1 is best. The reason names the evidence or the missing requirement. Ratings never change a stage.
+
+```json
+{ "items": [{ "id": "JOB_ID_1", "tier": "A", "rank": 1, "reason": "Meets every required qualification; recruitment and REDCap are in the library. No ethics submissions." }] }
+```
+
+`jobs.shortlist` then gives the jobs to act on now. A posting checked more than 14 days ago, a passed deadline or a `Hold` drops out of it until it is checked; nothing saved changes.
 
 ## 6. Finish
 

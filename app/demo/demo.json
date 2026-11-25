@@ -74,7 +74,7 @@
       "stage": "Preparing",
       "priority": 1,
       "whyFit": "Grant writing, coordination of academic sessions and multi-site study experience.",
-      "gaps": "Posting asks for budget management; no confirmed evidence.",
+      "gaps": "Posting asks for budget management; nothing in the career library yet.",
       "nextAction": "Draft tailored resume and cover letter",
       "deadline": "2026-12-12",
       "postingStatus": "open",
@@ -193,7 +193,7 @@
         "coordination",
         "stakeholder coordination"
       ],
-      "reviewStatus": "needs-review",
+      "reviewStatus": "provided",
       "star": {
         "situation": "Four municipalities sampled streams on different schedules.",
         "task": "Align methods so results could be compared.",
@@ -213,7 +213,7 @@
         "dashboards",
         "data visualization"
       ],
-      "reviewStatus": "needs-review"
+      "reviewStatus": "provided"
     },
     {
       "kind": "achievement",

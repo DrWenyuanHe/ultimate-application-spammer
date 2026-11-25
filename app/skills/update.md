@@ -44,7 +44,8 @@ If the person asks to update on their own ("update the app"), run `node app/cli.
    - `databaseBackup`: where the database backup was saved in `Archive/`.
    - `archivedEdits`, `removedFiles`, `movedAside`: app files copied or moved to `Archive/` so nothing was lost. Skip any list that is empty.
    - `dashboard`: if the dashboard was running, the app restarted it. If an entry shows `"restarted": false`, offer to run `node app/cli.mjs start`.
-4. Run `node app/cli.mjs doctor --brief` and act on it (see `AGENTS.md`).
+4. Run `node app/cli.mjs setup`. It refreshes the writing rules, guides and Word masters that come with the app, and leaves anything the person decided or edited.
+5. Run `node app/cli.mjs doctor --brief` and act on it (see `AGENTS.md`).
 
 If `update apply` fails, show the error in plain words. If it says the dashboard is still running, run `node app/cli.mjs stop` and try again. Do not use Git commands to force an update.
 
