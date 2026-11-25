@@ -1,8 +1,8 @@
 # Ultimate Application Spammer
 
-A private job-application workspace that lives in one folder on your computer. You open the folder in an AI assistant (Codex in the ChatGPT app, or Claude Code in the Claude desktop app) and talk to it in plain language. It finds job postings, checks them against what you want, tailors your resume and cover letter from facts you have confirmed, fills in application forms, and keeps an exact copy of everything that was submitted.
+A private job-application workspace that lives in one folder on your computer. You open the folder in an AI assistant (Codex in the ChatGPT app, or Claude Code in the Claude desktop app) and talk to it in plain language. It finds job postings, checks them against what you want, tailors your resume and cover letter from your own documents and answers, fills in application forms, and keeps an exact copy of everything that was submitted.
 
-Despite the joke name, it does not spam. It only applies to jobs you chose, with facts you confirmed. By default it stops on every application's final page and waits for you to say "submit". You can let it submit on its own once every question has a saved answer, but it still stops whenever a form asks something new. You always sign in yourself; it never types passwords, solves "I'm not a robot" checks or pays fees.
+Despite the joke name, it does not spam. It only applies to jobs you chose, with facts you gave it. By default it stops on every application's final page and waits for you to say "submit". You can let it submit on its own once every question has a saved answer, but it still stops whenever a form asks something new. You always sign in yourself; it never types passwords, solves "I'm not a robot" checks or pays fees.
 
 ## Quick start
 
@@ -35,7 +35,9 @@ To see your dashboard, say "open my dashboard", or double-click `Start Dashboard
 - "Grill me on my experience." (It interviews you, one question at a time, to turn each job into specific examples with numbers.)
 - "Find research coordinator jobs in Toronto, hybrid or remote."
 - "Is this job a good fit for me? <link>"
+- "What should I apply to next?" / "Am I on track for my goal?"
 - "Help me apply to the Cedar Health job."
+- "Always put my publications in the experience section." (It remembers corrections, so you don't repeat them.)
 - "Submit it." or "I submitted it myself. Save what I sent."
 - "I have an interview with Cedar Health. Help me prepare."
 - "How much space is this using?" / "Back up my data."

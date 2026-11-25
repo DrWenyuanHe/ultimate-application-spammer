@@ -37,7 +37,7 @@ Never put words in their mouth. Do not suggest numbers, outcomes or titles. If t
 
 ## 3. Save after each experience
 
-When an experience is done, read back the wording you will save and ask the person to confirm it. Then update the record with `evidence.update`. First read the full record with `evidence.list` (use `q` with its title): you need its current `version`, and you must keep its existing `sources`, `metrics` and `gapsNoted` in the new lists, since these fields are replaced as a whole. Read back the complete wording before marking it confirmed. Input file `app/data/tmp/interview-1.json`:
+When an experience is done, save it with `evidence.update` and show the saved wording in a line or two so they can correct it. Their answers are the source, so do not ask for a separate confirmation. First read the full record with `evidence.list` (use `q` with its title): you need its current `version`, and you must keep its existing `sources`, `metrics` and `gapsNoted` in the new lists, since these fields are replaced as a whole. Input file `app/data/tmp/interview-1.json`:
 
 ```json
 {
@@ -55,6 +55,7 @@ When an experience is done, read back the wording you will save and ask the pers
     ],
     "sources": [{ "label": "Study enrolment log", "locator": "monthly report, June 2024" }],
     "gapsNoted": ["Unsure whether the target was 60 or 65"],
+    "bullets": [{ "text": "Ran evening screening calls for an outpatient study, raising enrolment from 40 to 65 participants (March–June 2024)." }],
     "reviewStatus": "candidate-confirmed"
   }
 }
@@ -64,7 +65,8 @@ When an experience is done, read back the wording you will save and ask the pers
 node app/cli.mjs op run evidence.update --file app/data/tmp/interview-1.json
 ```
 
-- Set `reviewStatus` to `candidate-confirmed` only when the person has confirmed the final wording. Otherwise leave it as `needs-review`.
+- `candidate-confirmed` fits here, because the person has just told you the story themselves.
+- Write one or two resume bullets from the story (see "Write each bullet" in `app/skills/prepare-application.md`) and save them in `bullets`, keeping any already there.
 - Put anything unresolved in `gapsNoted`.
 - A new example that is not in the library yet: add it with `evidence.add` (with `parentId` set to the job's `id`).
 - `star`, `metrics` and `sources` are saved as whole fields. To change one metric, send the full list.

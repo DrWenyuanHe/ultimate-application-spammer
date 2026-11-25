@@ -90,14 +90,15 @@ test('read-only operations do not change the revision', async () => {
 // OPERATIONS so removing or renaming one fails here.
 const CONTRACT = [
   'profile.get', 'profile.set', 'answers.get', 'answers.set',
-  'jobs.list', 'jobs.get', 'jobs.history', 'jobs.add', 'jobs.update', 'jobs.bulk-update',
-  'search.queue', 'search.list', 'search.claim', 'search.complete', 'discover.run',
-  'screen.preflight', 'screen.record', 'screen.list',
+  'jobs.list', 'jobs.get', 'jobs.history', 'jobs.add', 'jobs.update', 'jobs.bulk-update', 'jobs.rank', 'jobs.shortlist', 'postings.check', 'plan.get',
+  'search.queue', 'search.list', 'search.claim', 'search.complete', 'search.fail', 'discover.run',
+  'screen.preflight', 'screen.record', 'screen.reopen', 'screen.list',
   'employers.list', 'employers.add', 'employers.update', 'employers.sectors', 'employers.import-guide',
-  'evidence.list', 'evidence.add', 'evidence.update', 'evidence.strength',
+  'evidence.list', 'evidence.add', 'evidence.update', 'evidence.get', 'evidence.strength',
+  'bullets.save', 'bullets.list', 'bullets.check', 'narratives.list', 'narratives.save', 'publications.report',
   'materials.list', 'materials.get', 'materials.save', 'brief.get', 'packets.create',
-  'rules.list', 'rules.propose', 'rules.revise', 'rules.approve', 'rules.retire',
-  'docs.resume', 'docs.cover-letter', 'docs.pdf', 'docs.check', 'docs.refresh-templates',
+  'rules.list', 'rules.save', 'rules.propose', 'rules.revise', 'rules.approve', 'rules.retire',
+  'docs.resume', 'docs.cv', 'docs.cover-letter', 'docs.pdf', 'docs.check', 'docs.refresh-templates',
   'submissions.record', 'submissions.list', 'files.archive', 'storage.report', 'storage.tidy',
   'backup.now', 'backup.list', 'backup.mirror', 'backup.restore',
 ]

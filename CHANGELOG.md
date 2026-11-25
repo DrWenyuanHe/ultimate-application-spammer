@@ -2,6 +2,21 @@
 
 Each section is a release. The update prompt shows the section for the new version, so it is written for people using the app, not for developers.
 
+## 0.2.0 — not released yet
+
+Less asking, better documents.
+
+- Your own documents and answers are used straight away. The assistant no longer asks you to confirm each fact. If two documents disagree, it leaves that fact out and tells you once.
+- When you correct something, it is fixed everywhere and remembered, so you don't have to repeat it.
+- Stronger resume bullets: the assistant now sees each story, number and caveat when it writes, says what came of your work, and checks the numbers against your records. These checks are notes for the assistant and never stop a document.
+- The posting's text is saved with the job, and the assistant starts from the facts that match it.
+- Good bullets are kept for reuse, and you can keep several resume angles (for example research and operations).
+- New writing rules, 32 in all and all on by default: they push for outcomes, full credit, exact numbers and shorter resumes. Rules you changed, approved or turned off stay as you left them.
+- Academic CVs, with published, submitted and in-progress work kept apart.
+- Jobs get a rating, and "what should I apply to next?" lists the ones worth acting on. Old checks, passed deadlines and missing required qualifications are flagged.
+- The assistant can check that a job link still opens the right posting, spot the same job under different links, and come back to a held job on a date.
+- "Am I on track?" works out a weekly pace for your goal.
+
 ## 0.1.1 — 2026-11-25
 
 Fixes found while testing a full application from start to finish.

@@ -48,6 +48,11 @@ export async function runDoctor({ network = true, port = Number(process.env.PORT
   }
   add('profile', profile, profile ? 'Profile saved' : 'Profile not filled in yet', 'Run the onboarding skill (app/skills/onboarding.md).')
   add('templates', fs.existsSync(path.join(folder('templates'), 'Resume master.docx')), 'Word masters in 3 Templates', 'Run the docs.refresh-templates operation.')
+  if (setupDone) {
+    let setupVersion
+    try { setupVersion = JSON.parse(fs.readFileSync(path.join(dataDir(), 'setup-state.json'), 'utf8')).version } catch {}
+    add('app-version', setupVersion === safeVersion(), setupVersion === safeVersion() ? `Rules and templates from v${setupVersion}` : 'The app was updated; its rules and templates need a refresh', 'Run `node app/cli.mjs setup` (no need to ask).')
+  }
   const converter = setupDone ? cachedConverter() : null
   checks.push({ id: 'pdf', ok: true, optional: true, detail: converter ? `PDF export via ${converter.kind}` : 'No PDF converter (optional)', fix: converter ? undefined : 'Optional: install LibreOffice (winget install TheDocumentFoundation.LibreOffice / brew install --cask libreoffice) to export PDFs.' })
 

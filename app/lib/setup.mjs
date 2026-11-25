@@ -9,6 +9,11 @@ import { openStore } from './store.mjs'
 
 const read = (p) => JSON.parse(fs.readFileSync(p, 'utf8'))
 
+/** The version of the code that is running, from package.json. */
+export function appVersion() {
+  return read(path.join(APP_DIR, '..', 'package.json')).version
+}
+
 export function ensureFolders() {
   const created = []
   for (const name of Object.keys(FOLDERS)) {
@@ -89,6 +94,6 @@ export function runSetup({ demo = true } = {}) {
     const demoStore = openStore({ demo: true })
     try { report.demoLoaded = loadDemo(demoStore) } finally { demoStore.close() }
   }
-  fs.writeFileSync(path.join(dataDir(), 'setup-state.json'), JSON.stringify({ completedAt: new Date().toISOString(), root: rootDir() }, null, 2))
+  fs.writeFileSync(path.join(dataDir(), 'setup-state.json'), JSON.stringify({ completedAt: new Date().toISOString(), version: appVersion(), root: rootDir() }, null, 2))
   return report
 }

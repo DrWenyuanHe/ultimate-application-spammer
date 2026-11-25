@@ -24,15 +24,20 @@ const EVIDENCE_KIND_SINGULAR = {
   skill: 'Skill', publication: 'Publication', other: 'Other',
 }
 const REVIEW_STATUS = {
-  'needs-review': ['Needs your review', 'warn'],
+  provided: ['From you', 'muted'],
+  'needs-review': ['From you', 'muted'],
   'candidate-confirmed': ['Confirmed by you', 'ok'],
   'source-verified': ['Checked against a document', 'ok'],
+  disputed: ['Left out: your documents disagree', 'warn'],
+  outdated: ['Replaced by a newer fact', 'muted'],
 }
+const TIERS = { A: ['A · Prioritize', 'ok'], B: ['B · Good option', 'ok'], C: ['C · Stretch', 'muted'], Hold: ['Check first', 'warn'] }
+const QUALIFICATION_STATUS = { met: ['Covered', 'ok'], partial: ['Partly', 'muted'], gap: ['Gap', 'warn'] }
 const MATERIAL_KINDS = {
   resume: 'Resume', cv: 'CV', 'cover-letter': 'Cover letter', essay: 'Essay', answer: 'Application answer',
   passage: 'Reusable passage', other: 'Other',
 }
-const MATERIAL_STATUS = { draft: ['Draft', 'warn'], approved: ['Approved by you', 'ok'] }
+const MATERIAL_STATUS = { draft: ['Draft', 'muted'], approved: ['Approved by you', 'ok'] }
 const RULE_GROUPS = [
   ['proposed', 'Suggested — waiting for your decision', 'Your assistant does not use these until you approve them.'],
   ['approved', 'Approved by you', 'Your assistant follows these when writing.'],
@@ -47,13 +52,13 @@ const STAR_PARTS = [['situation', 'Situation'], ['task', 'Task'], ['action', 'Ac
 const KIND_NAMES = {
   application: 'job', research_task: 'job search', screening_decision: 'posting', employer: 'employer',
   evidence: 'career library item', material: 'document', rule: 'writing rule', profile: 'profile',
-  submission: 'submission record', packet: 'application packet', screening_answers: 'application answers',
+  narrative: 'resume angle', submission: 'submission record', packet: 'application packet', screening_answers: 'application answers',
 }
 const EVENT_VERBS = {
   created: 'Added', updated: 'Updated', proposed: 'Suggested', approved: 'Approved', retired: 'Retired',
   claimed: 'Started', completed: 'Finished', screened: 'Screened', shortlisted: 'Shortlisted', submitted: 'Recorded a submission for',
   'research-finding': 'Found', 'research-refresh': 'Re-checked', seeded: 'Added starter', superseded: 'Replaced an earlier decision for',
-  revised: 'Suggested new wording for',
+  revised: 'Suggested new wording for', ranked: 'Rated', reopened: 'Reopened', failed: 'Put back', 'bullet-saved': 'Saved a bullet for',
 }
 const RECENT_MS = 2 * 60 * 1000
 
@@ -695,6 +700,7 @@ function jobsView() {
         h('span', { class: 'job-meta' },
           a.priority === 1 ? h('span', { class: 'star' }, '★ High priority') : null,
           a.priority === 1 && a.location ? ' · ' : null, a.location || ''),
+        TIERS[a.recommendation?.tier] ? h('span', { class: 'chips' }, badge(...TIERS[a.recommendation.tier])) : null,
         appRecent(a) ? recentMark() : null),
       h('td', { class: 'col-stage', 'data-label': 'Stage' },
         h('span', { class: 'stage-pill', dataset: { stage: a.stage } }, a.stage),
@@ -717,6 +723,9 @@ function jobsView() {
 
 function postingStatus(a) {
   const s = a.postingStatus
+  const f = a.freshness
+  if (s === 'open' && f?.status === 'expired') return badge('Deadline passed', 'muted')
+  if (s === 'open' && f?.status === 'verify' && ['Review', 'Preparing', 'Ready'].includes(a.stage)) return badge('Recheck posting', 'warn')
   if (s === 'open') return badge('Posting open', 'ok')
   if (s === 'closed') return badge('Posting closed', 'muted')
   return badge(s && s !== 'unknown' ? s : 'Not checked yet', 'warn')
@@ -726,13 +735,16 @@ function jobDetails(a, subs) {
   const next = NEXT_STAGE[a.stage]
   const facts = factList([
     ['Next action', a.nextAction],
+    ['Rating', a.recommendation ? `${TIERS[a.recommendation.tier]?.[0] || a.recommendation.tier}: ${a.recommendation.reason}` : ''],
     ['Priority', a.priority ? PRIORITY_LABELS[a.priority] || String(a.priority) : ''],
     ['Location', a.location],
     ['Work arrangement', a.workModel],
     ['Kind of work', a.discipline],
     ['Pay', a.salary],
     ['Job type', a.employmentType],
+    ['How the work splits', a.dutySplit],
     ['Job number', a.requisition],
+    ['Posted', a.postedAt ? formatDay(a.postedAt) : ''],
     ['Applied', a.appliedAt ? formatDay(a.appliedAt) : ''],
     ['Posting last checked', a.lastChecked ? formatDateTime(a.lastChecked) : ''],
     ['Posting note', a.postingCheckNote],
@@ -744,11 +756,22 @@ function jobDetails(a, subs) {
     h('div', { class: 'details-grid' },
       h('div', {}, facts),
       h('div', {}, longText('Why it fits', a.whyFit), longText('Gaps or questions', a.gaps), longText('Notes', a.notes))),
+    a.qualificationMap?.length ? qualificationTable(a.qualificationMap) : null,
     subs.length
       ? h('section', { class: 'subs', 'aria-label': 'What was submitted' }, subs.map(submissionBlock))
       : submittedStage ? h('p', { class: 'notice notice-warn' }, 'There is no record yet of exactly what was submitted for this job.') : null,
     submittedStage && !subs.length ? ask(`record what I submitted to ${a.company} for ${a.title}`, 'To save it, tell your assistant:') : null,
     next ? ask(`move ${a.company} ${a.title} to ${next}`) : ask(`archive ${a.company} ${a.title}`, 'To put it away, tell your assistant:'))
+}
+
+/** What the posting asks for and the library items that answer it. */
+function qualificationTable(rows) {
+  return h('section', { 'aria-label': 'What the posting asks for' },
+    h('h4', {}, 'What the posting asks for'),
+    h('ul', {}, rows.map((q) => h('li', {},
+      badge(...(QUALIFICATION_STATUS[q.status] || [q.status, 'muted'])), ' ', q.qualification, q.required ? ' (required)' : '',
+      q.evidence?.length ? h('span', { class: 'muted' }, ` — ${q.evidence.map((id) => findEvidence(id)?.title).filter(Boolean).join(', ')}`) : null,
+      q.note ? h('span', { class: 'job-meta' }, q.note) : null))))
 }
 
 /** Questions whose answers stay private on screen (voluntary self-identification and other sensitive topics). */
@@ -864,8 +887,8 @@ function storyItem(it, e) {
     missing.length ? h('ul', { class: 'tags missing', 'aria-label': 'Still missing' }, missing.map((m) => h('li', {}, MISSING_LABELS[m] || m))) : null,
     e ? toggleButton(key, [open ? 'Hide details' : 'Show details', h('span', { class: 'sr-only' }, ` for ${title}`)], panelId) : null,
     open && e ? h('div', { class: 'details', id: panelId }, evidenceDetails(e)) : null,
-    it && score < 100 ? ask(`interview me about ${title}`, 'To strengthen it, tell your assistant:')
-      : e?.reviewStatus === 'needs-review' ? ask(`let's check “${title}” together`, 'To confirm it, tell your assistant:') : null)
+    e?.reviewStatus === 'disputed' ? ask(`my documents disagree about “${title}”`, 'To clear it up, tell your assistant:')
+      : it && score < 100 ? ask(`interview me about ${title}`, 'To strengthen it, tell your assistant:') : null)
 }
 
 function evidenceDetails(e) {
@@ -887,6 +910,7 @@ function evidenceDetails(e) {
       ? h('ul', {}, [...sources.map((s) => h('li', {}, [s.label, s.locator].filter(Boolean).join(' — ') || 'Source')), e.source ? h('li', {}, e.source) : null])
       : h('p', { class: 'muted' }, 'Nothing yet.'),
     e.skills?.length ? h('ul', { class: 'tags', 'aria-label': 'Skills' }, e.skills.map((s) => h('li', {}, s))) : null,
+    e.bullets?.length ? [h('h4', {}, 'Saved bullets'), h('ul', {}, e.bullets.map((b) => h('li', {}, b.text)))] : null,
     e.gapsNoted?.length ? [h('h4', {}, 'Gaps noted'), h('ul', {}, e.gapsNoted.map((g) => h('li', {}, String(g))))] : null,
     h('p', { class: 'item-meta' }, `Last changed ${formatWhen(e.updatedAt)} · version ${e.version}`),
   ]

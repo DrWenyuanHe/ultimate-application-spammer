@@ -154,8 +154,8 @@ test('evidence + strength, materials (versions and files), brief and packets', (
 
   const brief = ok('brief.get', { applicationId: jobId })
   assert.equal(brief.application.id, jobId)
-  assert.equal(brief.evidence.length, 1)
-  assert.deepEqual(brief.templates.map((t) => t.id), [m.id])
+  assert.equal(brief.experiences[0].star.task, 't')
+  assert.deepEqual(brief.materials.map((t) => t.id), [m.id])
   const packet = ok('packets.create', { applicationId: jobId, items: [{ materialId: m.id, version: 1 }] })
   assert.equal(packet.items[0].version, 1)
 })

@@ -75,6 +75,7 @@ Run `node app/cli.mjs doctor` and fix every check with `"ok": false`, in this or
 | `templates` | `node app/cli.mjs op run docs.refresh-templates` |
 | `database-open` | Explain the error in plain words. If it says the database is locked or busy, run `node app/cli.mjs stop` and try again. For any other error, stop and ask what they want to do. Never move, replace or rebuild `app/data/workspace.sqlite` without their clear yes. Backups are listed by the `backup.list` operation (see `app/skills/storage-and-backups.md`). |
 | `profile`, `screening-answers` | Not repairs. Offer `app/skills/onboarding.md` when convenient. If the person prefers to leave something blank, do not keep asking in the same session. |
+| `app-version` | The app was updated. Run `node app/cli.mjs setup` to refresh its rules and templates. No need to ask. |
 | `pdf` | Optional. Offer to install LibreOffice. |
 
 If a fix fails, explain the error in plain words and stop. Do not try workarounds that delete or overwrite files.

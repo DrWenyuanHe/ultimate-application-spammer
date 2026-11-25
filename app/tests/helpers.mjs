@@ -14,7 +14,8 @@ export const CLI = path.join(REPO, 'app', 'cli.mjs')
 export function tempDir(name) {
   const dir = path.join(os.tmpdir(), `uas-test-${name}-${Date.now().toString(36)}-${randomBytes(4).toString('hex')}`)
   fs.mkdirSync(dir, { recursive: true })
-  return dir
+  // The real path: temp folders are symlinks on macOS and short names on Windows CI, and Git reports real paths.
+  return fs.realpathSync.native(dir)
 }
 
 /**

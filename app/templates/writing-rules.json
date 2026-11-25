@@ -1,7 +1,16 @@
 {
   "schemaVersion": 1,
-  "about": "Starter writing rules for resumes, CVs and cover letters. 'starter' rules are on by default; 'proposed' rules are suggestions the person can approve. Examples are invented; replace them with your own confirmed evidence. To change or retire a rule, ask your assistant (operations rules.revise / rules.retire).",
+  "about": "Starter writing rules for resumes, CVs, cover letters and answers, on by default. Examples are invented. When the person corrects something or states a preference, save it with rules.save; to turn a rule off, use rules.retire.",
   "rules": [
+    {
+      "id": "action-scope-result",
+      "status": "starter",
+      "title": "Write each bullet as action, scope and result",
+      "rule": "Start with what the person did, say how big or with whom, and end with what came of it. Use a dated number when the record has one. If there is no number, name the concrete outcome: adopted, published, funded, launched, still in use. Each role needs at least one bullet with an outcome. Never leave a topic-only bullet ('Studied X'): use what was written, built, decided or produced, or drop it. Aim for 20 to 35 words and one idea per bullet. Never add a result the record does not have.",
+      "whenRelevant": "Every resume or CV bullet.",
+      "materialKinds": ["resume", "cv"],
+      "example": "'Rebuilt the referral intake form with two clinic leads, used for all 120 referrals in 2024' instead of 'Responsible for intake forms'."
+    },
     {
       "id": "qualifications-to-evidence",
       "status": "starter",
@@ -69,7 +78,7 @@
       "id": "publications-in-research-experience",
       "status": "starter",
       "title": "Show publication numbers and journals within research experience",
-      "rule": "In research-focused resumes, include the publication count and representative journal names directly in the research experience section. Use the current supported total and first/shared-first authorship count. Place career-wide totals at section level unless the evidence supports a role-specific count; keep manuscripts in progress and peer-review service distinct from published articles.",
+      "rule": "In research-focused resumes, include the publication count and representative journal names directly in the research experience section. Use the current supported total and first/shared-first authorship count. Place career-wide totals at section level unless the evidence supports a role-specific count; keep manuscripts in progress and peer-review service distinct from published articles. Never count manuscripts in preparation as published, or add them to a published total.",
       "whenRelevant": "Research, research-development or scientific-program roles where publications help demonstrate qualification.",
       "materialKinds": ["resume"],
       "example": "'12 peer-reviewed publications (5 first or shared-first author) in journals including Journal A and Journal B; 2 manuscripts in preparation.'"
@@ -94,84 +103,192 @@
     },
     {
       "id": "explain-role-fit-and-motivation",
-      "status": "proposed",
+      "status": "starter",
       "title": "Explain why this role and this program",
-      "rule": "Explain fit for the specific program and the candidate's genuine, stated motivation, substantiate it with supported examples, and connect those examples to the program's needs. Complement the resume rather than repeat it, keep funding attribution, and distinguish transferable experience from unconfirmed requirements. Do not claim affiliation with, or expertise in, the target program.",
-      "whenRelevant": "When writing a cover letter or 'why this role' answer for a program, institute or mission-driven team.",
+      "rule": "Say why the person fits this specific program and why they want it, using what they have said about what they enjoy and are doing now. Back it with examples and connect them to what the program needs. Complement the resume rather than repeat it. Do not claim affiliation with, or expertise in, the target program.",
+      "whenRelevant": "When writing a cover letter or 'why this role' answer.",
       "materialKinds": ["cover-letter", "answer"],
       "example": "'I enjoy grant writing and am currently drafting a renewal; the program's need for proposal development is where I can contribute' — not 'as a member of your consortium'."
     },
     {
       "id": "date-and-define-metrics",
-      "status": "proposed",
+      "status": "starter",
       "title": "Date every metric and define its unit",
-      "rule": "Give each metric a date or period and an exact unit: weekly versus daily users, current versus cumulative, organization-level versus personal. Do not label sessions or summed daily users as unique weekly users, or private code as public open source.",
+      "rule": "Give each metric a date or period and an exact unit: weekly or daily users, current or cumulative, the organization's or the person's. Use the word the person uses for what is counted (households, cases, clinics). Do not label sessions or summed daily users as unique weekly users, or private code as open source.",
       "whenRelevant": "Whenever a resume, letter or answer cites usage, revenue, growth or audience numbers.",
       "materialKinds": ["resume", "cv", "cover-letter", "answer"],
-      "example": "'About 300 weekly active users (October 2026)' instead of 'thousands of users'."
+      "example": "'About 300 weekly active users (October 12 to 18, 2026)' instead of 'thousands of users'."
     },
     {
       "id": "confirmed-date-precision",
-      "status": "proposed",
-      "title": "Use only confirmed date precision",
-      "rule": "Show dates only to the precision the candidate has confirmed (usually month and year). Derive dates from confirmed facts and never invent days or months.",
+      "status": "starter",
+      "title": "Use only the date precision the person gave",
+      "rule": "Show dates only as precisely as the record does (usually month and year). Derive a date from stated facts if it follows from them, and never invent days or months.",
       "whenRelevant": "Role dates, award dates, publication dates and submission records.",
-      "materialKinds": ["resume", "cv", "cover-letter"],
-      "example": "'2021 – 2024' when only years are confirmed, not 'Sep 2021 – Apr 2024'."
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'2021 – 2024' when only years are known, not 'Sep 2021 – Apr 2024'."
     },
     {
       "id": "omit-unreconciled-numbers",
-      "status": "proposed",
-      "title": "Leave out numbers that conflict or lack a baseline",
-      "rule": "If sources disagree on a number, or a figure has no baseline or period, leave it out until it is reconciled instead of choosing one.",
+      "status": "starter",
+      "title": "Leave out numbers that conflict or have no baseline",
+      "rule": "If sources disagree on a number, a comparison has no baseline or period, or any record says a figure is unconfirmed or should not be reused, leave the figure out and describe the work instead. The explicit caution wins over the record that states the number plainly. Mark the plain record disputed and mention it once in the hand-over. Do not choose one, and do not stop to ask.",
       "whenRelevant": "Any quantified claim.",
       "materialKinds": ["resume", "cv", "cover-letter", "answer"],
-      "example": "Two documents give partner revenue as 40k and 65k for the same year: write 'grew partner revenue' and ask the candidate which figure is correct."
+      "example": "Two documents give partner revenue as 40k and 65k for the same year: write 'grew partner revenue' and list the conflict in the hand-over."
     },
     {
       "id": "show-digital-skill-through-built-tools",
-      "status": "proposed",
+      "status": "starter",
       "title": "Demonstrate digital skills through working tools",
-      "rule": "Show digital and AI capability through tools the candidate actually built, their relevant features and the work they support. Name platforms only where experience is supported.",
+      "rule": "Show digital and AI capability through tools the person actually built, their relevant features and the work they support. Name a tool or language only if a record describes using it; a tag or a summary list is not enough. Keep each tool with the project it was used on; do not move it to another.",
       "whenRelevant": "When digital tools, AI, analytics, coordination systems or research software are relevant qualifications.",
       "materialKinds": ["resume", "cv", "cover-letter"],
       "example": "'Built an internal CRM with pipeline dashboards used by a five-person team' or 'built a web interface for exploring gene-expression data' instead of a list of tool names."
     },
     {
       "id": "weight-professional-peer-review",
-      "status": "proposed",
-      "title": "Give professional peer review appropriate weight",
-      "rule": "Prioritize relevant professional journal peer reviewing when demonstrating scientific judgment and communication. Name suitable journals and describe the review work. Student editorial service can remain a secondary example.",
-      "whenRelevant": "When demonstrating evaluation, writing, critical appraisal or research communication.",
+      "status": "starter",
+      "title": "Lead with the stronger of two similar examples",
+      "rule": "When two examples show the same skill, use the one with higher responsibility or standing and drop or shorten the weaker. Professional journal peer review comes before student editorial work: name suitable journals and describe the review work.",
+      "whenRelevant": "Choosing between similar examples, and showing evaluation, writing or critical appraisal.",
       "materialKinds": ["resume", "cv", "cover-letter"],
-      "example": "'Peer reviewer for Journal A and Journal B (6 manuscripts)' ahead of 'editor, undergraduate science journal'."
+      "example": "'Peer reviewer for Journal A and Journal B, assessing study design and analysis' ahead of 'editor, undergraduate science journal'."
     },
     {
       "id": "preserve-scope-when-editing",
-      "status": "proposed",
-      "title": "Keep concrete scope when shortening or humanizing",
-      "rule": "When editing for style, clarity or length, keep the scope and concrete responsibilities of each role. Improve wording without collapsing specific ownership into generic claims, and add no new claims.",
+      "status": "starter",
+      "title": "Keep the substance when shortening or polishing",
+      "rule": "When editing for style, clarity or length, keep the scope and concrete responsibilities of each role, especially things the person set up or ran alone. Cut repetition and filler first, then weaker examples. If a role that matters for this job is down to one or two generic bullets, it is too short. Add no new claims.",
       "whenRelevant": "Editing, condensing or humanizing any material.",
       "materialKinds": ["resume", "cv", "cover-letter", "essay", "answer"],
-      "example": "Keep 'set up and ran all advertising accounts and personally negotiated agreements with partner institutions' rather than shortening it to 'supported marketing and partnerships'."
+      "example": "Keep 'set up and ran all advertising accounts and personally negotiated agreements with partner institutions' rather than 'supported marketing and partnerships'."
     },
     {
       "id": "avoid-formulaic-phrasing",
-      "status": "proposed",
-      "title": "Avoid repeated formulaic phrasing",
-      "rule": "Vary sentence openings and length; avoid stock phrases, chains of participial clauses, semicolon-linked bullets and rhetorical dashes. Do not repeat the same construction (for example 'I would bring...') across paragraphs.",
-      "whenRelevant": "Final pass on any prose.",
-      "materialKinds": ["cover-letter", "essay", "answer"],
+      "status": "starter",
+      "title": "Avoid repeated, formulaic phrasing",
+      "rule": "Vary how sentences and bullets start. Avoid stock phrases, strings of '-ing' clauses, semicolon-linked bullets and rhetorical dashes. Do not repeat the same construction across paragraphs or bullets. It should sound like the person.",
+      "whenRelevant": "Final pass on any document.",
+      "materialKinds": ["resume", "cv", "cover-letter", "essay", "answer"],
       "example": "Three paragraphs starting 'I would bring...' become one direct claim, one example and one question about the team's priorities."
     },
     {
       "id": "frame-plans-as-proposals",
-      "status": "proposed",
+      "status": "starter",
       "title": "Frame forward-looking answers as proposals",
       "rule": "Present plans for the new role ('In my first month I would...') as proposals, not as past work. Ask the candidate to read motivation statements aloud and change anything that does not sound like them.",
       "whenRelevant": "Application questions about plans, first weeks or motivation.",
       "materialKinds": ["answer", "essay", "cover-letter"],
       "example": "'I would start by mapping the current intake process' rather than 'I streamlined the intake process'."
+    },
+    {
+      "id": "state-full-contribution",
+      "status": "starter",
+      "title": "State the person's full contribution",
+      "rule": "Describe the contribution at the level the person stated. If they wrote all of it, say 'wrote'; do not weaken it to 'helped', 'assisted', 'contributed to' or 'led'. State first authorship, first drafting and submission status where recorded. Name who held the grant, led the project or supervised, so the credit is complete and correct. Full authorship of a part is not a claim to the whole, and what was done for some people is not a claim about all of them ('co-authored three mentee-led papers', not 'led mentees to three papers').",
+      "whenRelevant": "Whenever the record says what the person did themselves.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'Wrote the full proposal and generated its supporting data (PI: Dr. Example); funded for three years' instead of 'Contributed to a successful grant'."
+    },
+    {
+      "id": "show-the-change",
+      "status": "starter",
+      "title": "Show what was wrong and what changed",
+      "rule": "For tools, systems and process work, say what did not work before, what the person built or changed, and what became easier, faster or possible. Describe a benefit in words when it was not measured; do not invent a saving.",
+      "whenRelevant": "Operations, product, software and process examples.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'Replaced one shared spreadsheet that hid overdue cases with a stage-by-stage board showing each next step' instead of 'Built a case-management tool'."
+    },
+    {
+      "id": "precise-claims",
+      "status": "starter",
+      "title": "Say exactly what it does",
+      "rule": "Choose words that match what happened. A person reviewing and sending is not full automation; a forecast dashboard is not a forecast made; a tool someone directed AI to build is not expert coding in every language it uses. Never present planned or partial work as finished.",
+      "whenRelevant": "Automation, AI, analytics and technical claims.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'Drafts replies for a person to approve and send' instead of 'Automated customer email'."
+    },
+    {
+      "id": "current-figure-and-owner",
+      "status": "starter",
+      "title": "Use the newest figure and say whose it is",
+      "rule": "When the person gives a newer figure, use it and mark the older fact outdated. Say whose result it is (the company's, the partners', the team's or the person's own) and what it counts. Do not add a newer count to an older one unless they are known to be separate.",
+      "whenRelevant": "Revenue, users, customers, publications and other totals.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'Member clinics now book about 900 visits a month through the service (2026)' instead of 'Generated 900 visits'."
+    },
+    {
+      "id": "continuous-timeline",
+      "status": "starter",
+      "title": "Show a continuous, precise timeline",
+      "rule": "Use the month and year the person gave, the same way on every role. When one role followed straight after another, make that visible, for example by matching the end and start months. Put current roles first within a section; a short advisory role may follow the main role it came from. Keep roles with different dates separate.",
+      "whenRelevant": "Dates on resumes, CVs and application forms.",
+      "materialKinds": ["resume", "cv", "answer"],
+      "example": "'Doctoral Researcher, May 2021 – June 2025' followed by 'Postdoctoral Fellow, July 2025 – present'."
+    },
+    {
+      "id": "consistent-entries",
+      "status": "starter",
+      "title": "Format every role the same way",
+      "rule": "Every role, including a short advisory or volunteer one, uses the same line: bold title on the left, date right-aligned. Successive roles at one organization get their own lines, each with its own results. Use bold lead-ins on every bullet of a section or on none. If a role has no recorded date, put it in a section intro or a service line instead of a role line. Give publications one date basis (issue year or online year) throughout.",
+      "whenRelevant": "Building or revising a resume.",
+      "materialKinds": ["resume", "cv"],
+      "example": "'Board member | Example Society' with 'Mar 2024 – present' right-aligned, like every other role."
+    },
+    {
+      "id": "place-own-projects-where-they-fit",
+      "status": "starter",
+      "title": "Give the person's own projects a place",
+      "rule": "Include relevant things the person built or runs on their own, in the section where they support this job, with what it does, who it serves and a dated usage figure if there is one.",
+      "whenRelevant": "When a self-made tool, site, publication or community supports a qualification.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "Under 'Communication and Service': 'Developer, OpenGrantFinder | 2025 – present. Built a free grant-search site; 180 weekly users (March 2026)'."
+    },
+    {
+      "id": "corrections-apply-everywhere",
+      "status": "starter",
+      "title": "Apply a correction everywhere and for good",
+      "rule": "When the person corrects a fact or wording, change it in every place it appears in this application (summary, bullets, letter, answers), update the career-library record, and check that all documents agree. If the correction would apply to future documents too, save it as a rule so they never have to repeat it.",
+      "whenRelevant": "Any correction from the person.",
+      "materialKinds": ["resume", "cv", "cover-letter", "essay", "answer"],
+      "example": "After 'I did all of the drafting', fix the summary, the grant bullet and the letter, update the record, and keep crediting the PI."
+    },
+    {
+      "id": "check-every-clause",
+      "status": "starter",
+      "title": "Check every clause on its own",
+      "rule": "Read each sentence clause by clause against its record, for overstatement and for understatement. Do not join a well-supported action to a figure or result that is not equally supported, even when each appears somewhere. Say one thing caused another only if the record does. Do not supply a lab, employer or date by placing a record under a heading it does not name. Give self-reported timings and savings as approximate, not as measured. Do not attach an authorship count to journals where that authorship does not hold. Keep denominators and qualifiers ('analyzable at baseline', 'approximately', 'as of October 2026').",
+      "whenRelevant": "Every bullet, summary and paragraph, as the last pass before building.",
+      "materialKinds": ["resume", "cv", "cover-letter", "answer"],
+      "example": "'Personally ran all outreach and contracts' stands alone when the partner total is unconfirmed; 'about 80 patients screened at baseline' does not become 'an 80-patient study'."
+    },
+    {
+      "id": "rank-and-cut",
+      "status": "starter",
+      "title": "Rank by the posting, give each point one home, and leave air",
+      "rule": "Order bullets by how directly they answer the posting's duties, not by how impressive they are elsewhere. Say each accomplishment once: one grant or project gets one bullet unless a second shows something different the posting asks for. Merge a product with its usage figure, and similar bullets with each other. Cut what does not answer this posting: tool inventories, paper titles, bench or sales detail, older small awards. Two pages read well at about 18 to 24 bullets and 750 to 900 words; a reader should find the three strongest points in seconds. Fill pages evenly: no large blank area while relevant evidence is unused, and no crowding.",
+      "whenRelevant": "Choosing content and the final length pass on a resume.",
+      "materialKinds": ["resume"],
+      "example": "Merge 'Built a grant-search site' and 'Reached 180 weekly users' into one bullet, and drop a programming-language list the posting never mentions."
+    },
+    {
+      "id": "mine-the-records",
+      "status": "starter",
+      "title": "Look through the linked records before calling a role thin",
+      "rule": "For each role, check its linked publications, authorship statements, drafts, reviewer feedback, awards and adopted tools. Use revision and review records to show proposal and writing skill (what was answered, clarified or strengthened) without claiming every criticism was resolved.",
+      "whenRelevant": "Roles that look thin, and postings that ask for writing, proposals or coordination.",
+      "materialKinds": ["resume", "cv", "cover-letter"],
+      "example": "'Answered reviewers' comments and rewrote the risk section of a renewal (2024)' instead of 'Worked on a renewal'."
+    },
+    {
+      "id": "employer-language",
+      "status": "starter",
+      "title": "Connect evidence to the employer's mission, where it is true",
+      "rule": "Use the posting's own terms for work the person really did, and make the connection explicit when the record supports it. Do not stretch: a similar activity keeps its own name.",
+      "whenRelevant": "Summary, section headings and the bullets that answer the posting's main purpose.",
+      "materialKinds": ["resume", "cover-letter"],
+      "example": "For an open-data employer: 'built a free search site on public data', said as open-data work; not 'open-source' when the code is private."
     }
   ]
 }

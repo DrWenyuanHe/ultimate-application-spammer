@@ -30,6 +30,7 @@ A clean, two-page-friendly research and program style. It suits academic-to-indu
 - **Pagination:** headings and role lines stay attached to the text below them, and no paragraph splits across pages. If a section starts awkwardly near the bottom of page 1, set `"pageBreakBefore": true` on that section.
 - **Never shrink the type to force a page count.** Cut or tighten content instead.
 - **Sections follow the job:** headings are free text. Order and name them for the role (for example *Grant Development*, *Research Experience*, *Partnerships and Program Operations*, *Education*, *Digital Skills*).
+- **Every role looks the same:** title left, dates right, including short or volunteer roles.
 - **Formatting inside text:** `**bold**` and `*italic*` work in any field.
 
 ## Cover-letter style (default)
