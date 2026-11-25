@@ -15,6 +15,6 @@ The first release.
 - Resume and cover-letter templates in Word, with PDF export if LibreOffice (or Word on Windows) is installed.
 - The assistant can fill in application forms after you sign in. By default it waits for you to say "submit". It stops whenever a form asks something new.
 - An exact copy of every submitted application, with every question and answer, in its own folder for interview preparation.
-- Automatic database backups (one a day, taken when the dashboard starts), an optional second backup folder, and a clean-up that moves old files aside for you to delete yourself.
+- Automatic database backups (one a day, taken when the dashboard starts or your assistant first changes something that day), an optional second backup folder, and a clean-up that moves old files aside for you to delete yourself.
 - Updates ask you first, back up your database, and can be undone.
 - Nothing is ever deleted by the app or the assistant.
